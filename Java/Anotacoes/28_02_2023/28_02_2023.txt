@@ -1,0 +1,3 @@
+Operação Relacional
+
+boolean var2 = var1>=50;

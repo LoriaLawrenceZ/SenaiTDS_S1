@@ -1,0 +1,8 @@
+------------------------------------------------------------------------------------------------
+
+--> "Index" é o nome a se dar à	 página principal
+
+--> Objetivo da página wiki é o conteúdo, não dando prioridade à estilização
+
+--> <hr>
+	-Similar a '<br>', mas cria uma linha horizontal junto

@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------------
+----------> Ubuntu <----------
+--> 'sudo su'
+	Comando para entrar como super usuário (root)
+
+--> 'sudo apt-get update'
+	(Insira a senha logo após)
+	- Ele procura por todas as atualizações disponíveis a serem feitas (em programas)
+	- Se tiver atualização a ser feita, ele as realiza automaticamente
+
+--> 'sudo apt-get upgrade'
+	- Ele vê se tem atualização do Sistema Operacional, e se tiver, ele te pergunta se quer atualizar ou não

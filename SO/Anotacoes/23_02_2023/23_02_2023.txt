@@ -1,0 +1,24 @@
+-----------------------------------------------------------------------------------
+
+----------> SO
+--> Sistema Operacional é o software que estabelece a relação entre o usuário e o microcomputador
+
+--> SO é considerado como um software base (pois fornece suporte às aplicações)
+
+--> É um programa que conversa diretamente com o hardware da máquina
+
+--> Funciona como uma interface entre a aplicação e rotinas de E/S (entrada e saída) com o hardware
+
+--> SO é um software que apresenta duas características principais
+	- Funcionar como uma ponte entre aplicações na camada do usuário e hardware
+	- Gerenciar os recursos de um sistema complexo (quando executa vários programas de uma vez, na realidade, o sistema operacional troca em fração de segundo o programa sendo processado pela unidade central de processamento)
+
+--> Driver
+	- Programa que torna possível o SO se comunicar com o hardware
+
+----> Sistema operacional de código aberto
+--> Definições de código aberto
+	- Que seja executado para toda e qualquer função
+	- Que possa ser distribuído, contribuindo para o conhecimento de todos
+	- Que seja disponível para ser copiado
+	- Que seu código esteja disponível para análise

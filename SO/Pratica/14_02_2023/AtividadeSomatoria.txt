@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------------------------------------------
+----------> Atividade <----------
+--> Pastas para criar
+	- Diretoria; Engenharia; Controle de Processo; Ferramentaria; Ajustagem; CNC; Qualidade
+
+--> Montar Mapa de Rede
+	- Mapa simples no paint
+	- Principal é o Servidor
+	- Puxar uma linha do Servidor pra  Diretoria
+		- Significa que o computador está conectado ao servidor
+	- Do servidor, passar pro Hack
+	- Ramificação, quando sai de um Hack e vai para outro
+
+--> Fazer Estudo de Caso
+	- Turma A e B, noite e tarde
+	- Cada turma responsável pelo mapeamento de 1 setor
+		Montar, pegar toda numeração, fazer teste por amostragem

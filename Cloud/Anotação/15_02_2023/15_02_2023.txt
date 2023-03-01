@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------
+---------------------------------> Google Cloud <---------------------------------
+
+--> Google Cloud Skills Boost
+	- Ambiente de estudo
+
+--> Fazer os Labs de estudo
+	- Entra pelo 'https://go.qwiklabs.com/gwg'
+
+
+------> Computação em nuvem <------
+
+--> Cinco características fundamentais
+	- Atendimento sob demanda
+	- Acesso amplo à rede
+	- Pooling de recursos
+		Provedor compartilha recursos com os clientes
+	- Elasticidade rápida
+	- Serviço medido
+
+--> Segurança das informações
+	Dados em um mesmo datacenter, mas não se misturam
+
+--> Iaas x PaaS x SaaS
+	-> IaaS (Infraestrutura como Serviço)
+		- CPU, memória, armazenamento
+		- Usuário precisa gerenciar o SO e o aplicativo
+	-> PaaS (Plataforma como Serviço)
+		- A plataforma é um serviço gerenciado
+		- O usuário só forneçe o aplicativo
+	-> SaaS (Software como serviço)
+		- A plataforma e o software são fornecidos como serviço ao usuário
+		- O usuário fornece os dados
+
+--> Cloud Oferece serviços em Multirregião, Região e Zona
+
+--> Os recursos têm uma hierarquia
+	- Organização, Pastas, Projetos e Recursos

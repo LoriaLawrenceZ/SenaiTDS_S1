@@ -1,0 +1,117 @@
+---------------------------------------------------------------------------------------------------------------
+
+--> UX/UI
+	UX - Como o usuário utiliza o sistema, experiência do usuário
+	UI - Tornar a interação com o usuário o mais simples possível, interface do usuário
+	Profissionais de desing (Não é mais o desenvolvedor que faz o design do site)
+	Design do site tem grande importância e influência nos usuários
+	O design é centrado no usuário
+
+--> Figma
+	Prototipagem visual para servir como base para o desenvolvimento do site
+
+--> Tipos de prototipagem
+	Baixa, Média, Alta
+	Baixa - Puro rascunho
+	Média - Mais refinado que o baixo, já simulando a interatividade do usuário
+	Alta - Pronto visualmente, complexo, refinado, completo
+
+-----------------------------------------------------------------------------------------------------------------
+--------> Estrutura de Páginas WEB <--------
+
+--> Tecnologias Utilizadas
+	-> HTML - Define como será a estrutura e o conteúdo da página
+	-> CSS - Estilização da página, configuração da aparência dos elementos da página
+	-> Javascript - Linguagem de programação responsável por implementar funcionalidades em uma página e torná-la mais dinâmica
+
+--> Ferramenta
+	-> VSCode
+
+--------> HTML <--------
+
+--> Utiliza tags (<tag>)
+	
+--> Tag
+	-Conteúdo está entre a abertura e fechamento da tag
+	-Tags obrigatórias:
+		<html>; <head>; <body>
+	-Abrir tag: <>
+	-Fechar tag: </>
+
+-> <head>
+	- <meta>
+		Define qualquer informação de metadados que não podem ser definidos por outros elementos HTML
+
+--> <body>
+	- Marca todo o conteúdo da página
+
+--> <h1> ... <h6>
+	- Tag de títulos e subtítulos
+	- Respeitar a hierarquia
+	- <h1> mais importante, <h6> 'menos' importante
+	
+--> <p>
+	- Tag de parágrafo
+	
+--> <a>
+	- Tag de âncora
+	- Cria uma hiperligação entre as páginas na web (definir o link em 'href')
+	- href="" : atributo de <a> que define  URL que será o destino do link
+
+--> <img>
+	- As imagens têm que estar em uma pasta dentro do projeto, de maneira organizada
+	- src="" : atributo de <img> que define qual será a imagem utilizada (aquideve ser informado o source da imagem)
+	- alt="" : nome que aparece caso a imagem não carregue (também serve para acessibilidade)
+	
+--> <br>
+	- Tag de quebra de linha
+
+--> <table>
+	- Tag de tabela
+	
+	- <thead> : cabeçalho da tabela
+		- <th> : cada item do cabeçalho
+	
+	- <tbody> : conteúdo da tabela (abaixo do cabeçalho)
+		- <td> : cada item do conteúdo da tabela
+		- <tr> : quebra de linha da tabela
+	
+	- Exemplo:
+		<table>
+		    <thead>
+			<th>A</th>
+			<th>B</th>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td>1</td>
+			    <td>2</td>
+			</tr>
+			<tr>
+			    <td>3</td>
+			    <td>4</td>
+			</tr>
+		    </tbody>
+		</table>
+
+--> <ol> e <ul>
+	- Tag de lista (<ol>-lista ordenada; <ul>-lista não-ordenada)
+
+	- <li> : item da lista
+	
+	-> <ol>
+	
+	-> <ul>
+
+--> <footer>
+	- Tag que define o rodapé da página
+
+--> <section>
+	- Tag que marca uma sessão da página
+
+
+---------------------------------------------------------------------------------------------------------------
+--------> VSCode <--------
+
+--> Extensão 'Open in default browser'
+	Ctrl + 1 - Abre o documento no browser padrão

@@ -1,0 +1,61 @@
+----------> Atividade Formativa <----------
+
+--> Explicar o porquê da diferença de tamanho comercial e o tamanho que aparece no sistema do HD que for escolhido
+
+--> Lista de componentes com especificações técnicas e preço individual e total do Orçamento
+
+--> Relatório com a justificativa para a escolha de cada componente explicando de forma simples o seu funcionamento e o diferencial que ua escolha tem para os outros produtos existentes
+
+--> "Janela" para upgrades
+
+--> Computador inclui
+	- Processador
+	- Memória
+	- Placa-mãe
+	- HD
+	- Placa de vídeo
+	- Fonte
+	- Gabinete
+	- Monitor
+
+Computador que rode:
+	-> VSCode
+	-> Software da Adobe
+		- Adobe Photoshop (Edição de imagens)
+		- Adobe XD (Prototipagem)
+		- Adobe Illustrator (Arte com vetorização)
+	-> GIMP (Photoshop gratuito)
+	-> CorelDraw (Illustrator gratuito)
+
+
+
+
+------------------------------------------------------------
+Processador:
+	- Intel Core i7-6700k 4.0GHz (91W) - R$ 598,68
+		Processador i7 de sexta geração com litografia de 14 nanômetros; 4 núcleos, 8 threads; DDR4 - 2666MHZ;
+		Processador foi escolhido devido a suas tecnologias e seu preço comparado com outros processadores de mesma capacidade e foi percebido um bom-custo-benefício
+Memória:
+	- 8GB
+
+Placa-mãe:
+	- 
+
+HD:
+	- 2GB + espaço livre adicional durante a instalação (Recomenda-se SSD - Illustrator)
+
+Placa de vídeo:
+	- GPU Intel Driver mais recentes que a versão 8.15.10.2702
+	- Mínimo de 1GB de VRAM (recomenda-se 4GB)
+	- Ser compatível com a versão 4.0 ou posterior do OpenGL
+	- Suporte para DirectX 12
+	- 1.5GB de memória de GPU
+
+Fonte:
+	-
+
+Gabinte:
+	-
+
+Monitor:
+	- Resolução mínima de 1920x 1080 com 100% dimensionamento de interface do usuário

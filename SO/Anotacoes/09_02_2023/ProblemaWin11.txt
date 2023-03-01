@@ -1,0 +1,33 @@
+Desligar Windows
+Coloca o pendrive
+	Windows PE - manutenção
+Entra no boot (F12, F8, depende do modelo)
+UEFI disc(não vai ser lido)
+New setup
+	Achar quais são as configurações
+	Ver boot seguro (secure boot)
+		Sim, desabilite
+Em Storage
+	Habilite AHCI/NVMe
+	Aplicar, exit
+
+F12 denovo e selecione a mídia que está utilizando para iniciar o WindowsPE (no grupo "UEFI Boot Devices")
+
+Agora vai dar o boot pelo WinPE
+
+Abre a pasta UserTools (está na área de trabalho)
+	Abra o DiskPartTool
+		Seleciona UEFI/GPT
+
+abre gimagex
+	Vai em apply
+	Em source procura pela imagem (.win)
+	Destination W:\
+
+Abre o commit
+
+No boot seleciona denovo o HD
+
+
+
+Na bios tem como mudar prioridade de boot, abrindo primeiro algum pendrive que esteja conectado, e depois o no HD

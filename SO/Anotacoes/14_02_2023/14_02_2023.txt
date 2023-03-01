@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------
+----------> Linux <----------
+
+------> Comandos
+
+--> 'ls'
+	- Lista os itens do diretório em que está
+
+--> 'mkdir ...'
+	- Criar diretório chamado ...
+	- Com espaço entre nomes, significa pastas diferentes
+		- 'mkdir teste teste2' vai criar 2 pastas (teste e teste2)
+
+--> 'rmdir ...'
+	- Exclui (Não permanentemente) a pasta ...
+
+---------------------------------------------
+------> Terminal
+
+--> Abrir terminal
+
+--> '$' no final
+	Usuário comum
+
+---------------------------------------------

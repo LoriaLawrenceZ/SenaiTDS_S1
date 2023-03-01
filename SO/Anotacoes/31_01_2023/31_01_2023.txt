@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------------------
+
+--> Pendrive
+	formatar de FAT32 (não deixa o pendrive baixar mais que 1 giga) para NTFS
+	Ao fazer isso perde tudo (pq formatou)
+
+--> ISOs para baixar
+
+--> Server
+	Não tem interface gráfica pra não perder poder de processamento
+
+--------VirtualBox (Oracle)--------
+
+-> Computador dentro de computador
+
+-> Serve para testar coisas basicamente, caso dê problema, é um computador de mentirinha
+
+- Só next no download
+
+--> Pra baixar Ubuntu, entra na aba download de desktop do site do Ubuntu e escolhe pra baixar (lá vai mostrar os requisitos mínimos)
+
+--> No VirtualBox vai em novo, nomeia, deixa a pasta padrão, escolhe o tipo de acordo com o que quer fazer e o resto tem que ter bom senso de acordo com o seu computador
+
+--> Coloca a VM pra rodar, e dentro dela você escolhe a ISO baixada

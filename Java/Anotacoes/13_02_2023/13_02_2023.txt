@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------------------
+----------> Versionamento <----------
+
+--> Git
+	Cria um repositório
+	Faz um controle de versões na máquina local
+
+--> Github
+	Repositório online
+
+--> 'git fetch'
+	Ele automatiza o processo de upload dos arquivos pro repositório remoto
+
+-------------------------------------------------------------------------------------------------
+
+--> Criando objeto
+	- 'NomeClasse nomeObjeto = new NomeClasse();'
+
+--> Método
+	- 'public void name(){}'
+
+--> Para que uma classe possa executar algo sem erros, é necessário métodos

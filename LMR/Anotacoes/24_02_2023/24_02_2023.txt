@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------------------------
+----------> CSS <----------
+
+--> Para chamar o arquivo CSS, no <head> do HTML, utilize a tag <link>
+	- <link rel="stylesheet" href="style.css">
+
+--> CSS responsável pela aparência dos elementos HTML
+
+----> Seletores CSS
+
+--> Seletores indicam o que será alterado , e como será modificado (utilizando os pares de PROPRIEDADE e VALOR)
+	- Ex:	
+		h1{
+		    color: #110c61;
+		}
+		
+		->' h1 ' = seletor
+		->' color ' = propriedade
+		->' #110c61 ' = valor
+
+--> É possível selecionar os elementos de diferentes formas
+	- Por nome da tag
+		<h1>
+		h1{}
+
+	- Por nome da class (class)
+		<h1 class="title">
+		.title{}
+
+	- Pelo 'id' do elemento (é único)
+		<input type="email" name="email" id="campo-email">
+		#campo-email{}
+
+	- Seleção universal
+		*{}

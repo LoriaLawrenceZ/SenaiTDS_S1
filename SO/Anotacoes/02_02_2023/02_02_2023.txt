@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------
+
+--------> VirtualBox <--------
+
+--> Criar uma máquina virtual e seu sistema operacional
+	Não altere a pasta padrão selecionada
+	Escolhe o tipo, e a versão, escolhe a compatível com a ISO que será usada
+	A máquina emula um HD, por isso tem a opção de até 2TB
+
+--> Com a máquina virtual já aberta
+	Vai aparecer pra escolher uma ISO, escolhe a baixada
+	Com a Iso escolhida, seleciona 'Montar e Tentar novo boot'
+		No Linux Lite, no boot a primeira opção é de teste, e a segunda é a instalação final
+
+--> Dá pra testar o linux antes de instalar
+	Qualquer mudança feita nesse modo não será salva
+
+--> Desligar a máquina
+
+-------------------------------------------------------------------------
+
+--> Arquivo de persistência
+	Ele grava todas as alterações, quando fechar e abrir estará salvo

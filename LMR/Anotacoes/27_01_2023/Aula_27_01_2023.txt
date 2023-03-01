@@ -1,0 +1,28 @@
+------------------=====Metodologias Ágeis=====------------------
+--->Scrum<---
+trabalho em equipe
+várias reuniões rápidas para ir se atuaizando e procurar a melhor maneira de dar sequência ao projeto
+
+--->Kanban<---
+(-TRELLO)
+Deixar a equipe trabalhando no projeto ter conhecimento sobre o que está sendo feito em um projeto
+Escrever em algum lugar 1-atividades para fazer; 2-o que estou fazendo; 3-o que já está feito
+
+-------------------------------GITBASH & GITHUB-------------------------------
+-> 'git init'
+	Cria um repositório git vazio (ou inicializa um já existente)
+
+-> 'git config --local user.name "LoriaLawrenceZ" '
+	Configurando que o usuario local terá o nome LoriaLawrenceZ
+
+-> 'git config --local user.email "lorenzozimbresfilmmaker@gmail.com" '
+	Configurando que o usuário local terá o email lorenzozimbresfilmmaker@gmail.com
+
+-> 'git add .'
+	Adiciona todos os arquivos na para para a branch (quando add .)| tem como selecionar apenas os arquivos que quer fazer o commit
+
+-> 'git status'
+	Mostra o status da branch em que está
+
+-> 'git commit -m "27/01;2023" '
+	É feito o commit do que foi selecionado | -m é a mensagem que será registrada no commit

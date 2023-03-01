@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------------------
+------> Usuário
+
+--> Gerenciar usuários credenciados
+	- Vai em pesquisar; Painel de controle; Gerenciador de credenciais; Credeniais do Windows
+
+---------------------------------------------
+
+------> Comandos
+
+--> ' git clone https:/... '
+	- Clonar arquivos do repositório remoto para o repositório local
+
+--> ' git pull '
+	- Atualiza a pasta local com o repositório remoto
+
+------------------------------------------------
+
+------> <iframe>
+--> Serve para não ficar repetindo código desnecessariamente, tipo <header> e <footer>
+--> 'src'
+	- Atributo para mostrar de onde tirar o código
+--> 'frameborder'
+	- Atributo que define a borda do conteúdo adicionado
+
+------> <form>
+--> Responsável pelo envio e coleta de informações (conectado com banco de dados)
+--> ' action '
+	- Atributo reponsável por definir para onde vão as informações
+--> ' method '
+	- Atributo responsável por definir o método de empacotamento dos dados
+	- Método 'POST' é omitido e 'GET' é explícito
+
+------> <label>
+--> Define um rótulo para vários elementos
+--> 'for'
+	- Atributo responsável por definir à qual tag <label> está linkada/relacionada
+--> Atributo 'for' deve ser igual ao atributo 'id' do elemento relacionado
