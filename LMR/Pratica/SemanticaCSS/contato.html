@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleLogin.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styleContato.css">
+    <title>Semântica CSS</title>
 </head>
 
 <body>
@@ -26,22 +26,26 @@
         </nav>
     </header>
 
-    <div class="login">
-        <div>
-            <figure>
-                <img src="img/loginICO-removebg-preview.png" alt="Imagem Login">
-            </figure>
-        </div>
+    <article>
+        <section>
+            <form action="#" method="post">
+                <p>ENVIE SUA MENSAGEM</p>
 
-        <form method="post" action="#">
-            <p class="username">Username</p>
-            <input type="text" name="username" id="username" placeholder="Type here...">
+                <label for="userName">Nome:</label>
+                <input type="text" name="userName" id="userName">
 
-            <p class="password">Password</p>
-            <input type="password" name="password" id="password" placeholder="Type Here...">
-        </form>
-    </div>
+                <label for="userEmail">E-mail:</label>
+                <input type="email" name="userEmail" id="userEmail">
 
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <div>
+                    <input type="submit" value="ENVIAR" class="submit">
+                </div>
+            </form>
+        </section>
+    </article>
 </body>
 
 </html>

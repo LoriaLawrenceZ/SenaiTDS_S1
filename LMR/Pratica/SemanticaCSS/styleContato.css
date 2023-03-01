@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*Mexendo universalmente*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(85,85,85);
+}
+
+/*Navigator Menu*/
+#menu{
+    width: 100%;
+    height: 130px;
+    background-color: #000000;
+    text-align: center;
+}
+
+#menu img{
+    height: 80px;
+}
+
+.linkMenu{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: aliceblue;
+    font-size: 2em;
+}
+
+/*Espaço de Contato*/
+article{
+    color: aliceblue;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 2em rgb(20, 20, 20);
+    text-align: center;
+    width: 40%;
+    margin: 5em auto;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+form p{
+    font-size: 3em;
+}
+form label{
+    font-size: 1.5em;
+    display: block;
+    padding: 2em 0 .25em 0;
+}
+form div{
+    margin:2em 0 1em 0;
+}
+.submit{
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    border: none;
+    color: aliceblue;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    border-radius: .5em;
+    background-color: rgb(85,85,85);
+}
+.submit:hover{
+    cursor: pointer;
+}
+input[type="text"], input[type="email"], textarea{
+    font-size:1.5em;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: .5em;
+}
