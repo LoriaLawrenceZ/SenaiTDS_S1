@@ -60,6 +60,7 @@ form div{
     font-size: 1.5em;
     border-radius: .5em;
     background-color: rgb(85,85,85);
+    transition-duration: 0.4s;
 }
 input[type="text"], input[type="email"], textarea{
     width: 60%;
@@ -72,4 +73,7 @@ input[type="text"], input[type="email"], textarea{
 }
 .submit:hover{
     cursor: pointer;
+    color: rgb(180, 180, 180);
+    background-color: black;
+    box-shadow: 0 0 1em rgb(85, 85, 85);
 }
