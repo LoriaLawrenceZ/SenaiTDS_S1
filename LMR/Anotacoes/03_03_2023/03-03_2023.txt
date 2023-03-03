@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------------------------
+----------> Posicionamento CSS <----------
+
+
+------> Posicionamento de elementos com 'flexbox'
+
+----> Principais propriedade
+
+--> ' display: flex; '
+	- Propriedade que indica que o elemento é um container flex, e habilita as demais propriedades do flexbox
+
+--> ' flex-direction: '
+	- Propriedade que indica o sentido de disposição de seus elementos filhos
+
+--> ' justify-content: '
+	- Determina o alinhamento dos itens no mesmo sentido de disposição dos elemetos do container
+
+
+------> Sobrepocisão de Elementos - ' Position '
+
+----> Exemplo
+
+header{
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+}
+	
+	- ' position: fixed ' fixa o elemento na tela
+	- ' z-index: 1 ' faz com que o elemento fique por cima dos outros
+	- ' top: 0 ' posiciona o elemento à uma distância de 0px da extremidade superior da página
