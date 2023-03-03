@@ -2,7 +2,7 @@
 ----------> Posicionamento CSS <----------
 
 
-------> Posicionamento de elementos com 'flexbox'
+------> Posicionamento de elementos com 'flexbox' <--
 
 ----> Principais propriedade
 
@@ -16,7 +16,7 @@
 	- Determina o alinhamento dos itens no mesmo sentido de disposição dos elemetos do container
 
 
-------> Sobrepocisão de Elementos - ' Position '
+------> Sobrepocisão de Elementos - ' Position ' <--
 
 ----> Exemplo
 
@@ -33,3 +33,24 @@ header{
 	- ' position: fixed ' fixa o elemento na tela
 	- ' z-index: 1 ' faz com que o elemento fique por cima dos outros
 	- ' top: 0 ' posiciona o elemento à uma distância de 0px da extremidade superior da página
+
+
+--------> Rsponsividade <--
+
+----> A adequação à telas é feita pelo CSS pelas ' media queries ', que com base em características do dispositivo, como largura da tela, consegue mudar alguma configuração de estilo de uma página
+
+----> Exemplo
+//Configuração padrão
+
+img{
+	width: 600px;
+}
+
+
+//Configuração da tag para dispositivos com telas com largura menor que 768px
+
+@media screen and (max-width: 768px){
+	img{
+		width: 200px;
+	}
+}
