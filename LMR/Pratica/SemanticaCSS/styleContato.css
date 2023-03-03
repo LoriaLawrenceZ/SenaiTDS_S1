@@ -61,12 +61,15 @@ form div{
     border-radius: .5em;
     background-color: rgb(85,85,85);
 }
-.submit:hover{
-    cursor: pointer;
-}
 input[type="text"], input[type="email"], textarea{
+    width: 60%;
     font-size:1.5em;
     text-align: center;
     background-color: rgb(180, 180, 180);
     border-radius: .5em;
+    border: none;
+    padding: .25em .5em;
+}
+.submit:hover{
+    cursor: pointer;
 }

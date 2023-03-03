@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(41,41,41);
+    background-color: rgb(85, 85, 85);
 }
 
 /*Navigator Menu*/
@@ -29,39 +29,47 @@ body{
     font-size: 2em;
 }
 
-
-/*Login*/
-.login{
-    background-color: rgb(41, 41, 41);
-}
-.login div{
-    padding: 3em 0 3em 0;
-}
-
-.login img{
-    filter: invert();
-    display: block;
-    margin: 0 auto 0 auto;
-    width: 18em;
-    height: 18em;
-}
-
-form{
-    text-align: center;
-}
-form p{
-    font-size: 2em;
+/*Espaço de Login*/
+article{
     color: aliceblue;
-}
-.password, .username{
-    margin: 2em 0 .5em 0;
-}
-form input{
-    border-radius: .5em;
-    width: 25em;
-    height: 3em;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 2em rgb(20, 20, 20);
+    text-align: center;
+    width: 40%;
+    margin: 5em auto;
+    padding: 2em;
+    border-radius: 2em;
 }
 
-input[type="text"], input[type="password"]{
+form p{
+    font-size: 3em;
+}
+form label{
+    font-size: 1.5em;
+    display: block;
+    padding: 2em 0 .25em 0;
+}
+form div{
+    margin:2em 0 1em 0;
+}
+.submit{
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    border: none;
+    color: aliceblue;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    border-radius: .5em;
+    background-color: rgb(85,85,85);
+}
+input[type="text"], input[type="email"], textarea{
+    width: 60%;
+    font-size:1.5em;
     text-align: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: .5em;
+    border: none;
+    padding: .25em .5em;
+}
+.submit:hover{
+    cursor: pointer;
 }

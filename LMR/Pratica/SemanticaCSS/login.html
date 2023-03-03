@@ -22,25 +22,27 @@
             <a href="#" class="linkMenu">Móveis</a>
             <a href="#" class="linkMenu">Eletronics</a>
             <a href="contato.html" class="linkMenu">Contact</a>
-            <a href="login.html" class="linkMenu">Login</a>
+            <a href="#" class="linkMenu">Login</a>
         </nav>
     </header>
 
-    <div class="login">
-        <div>
-            <figure>
-                <img src="img/loginICO-removebg-preview.png" alt="Imagem Login">
-            </figure>
-        </div>
+    <article>
+        <section>
+            <form action="#" method="post">
+                <p>ENTRE NA SUA CONTA</p>
 
-        <form method="post" action="#">
-            <p class="username">Username</p>
-            <input type="text" name="username" id="username" placeholder="Type here...">
+                <label for="userName">Nome:</label>
+                <input type="text" name="userName" id="userName">
 
-            <p class="password">Password</p>
-            <input type="password" name="password" id="password" placeholder="Type Here...">
-        </form>
-    </div>
+                <label for="userEmail">E-mail:</label>
+                <input type="email" name="userEmail" id="userEmail">
+
+                <div>
+                    <input type="submit" value="LOGIN" class="submit">
+                </div>
+            </form>
+        </section>
+    </article>
 
 </body>
 
