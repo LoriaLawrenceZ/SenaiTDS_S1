@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*Mexendo universalmente*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(185, 185, 185);
+}
+
+/*Navigator Menu*/
+#menu{
+    width: 100%;
+    height: 130px;
+    background-color: #000000;
+}
+
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+nav{
+    text-align: center;
+}
+
+#menu img{
+    height: 80px;
+}
+
+.linkMenu{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: aliceblue;
+    font-size: 2em;
+}
+
+/*Conteúdo*/
+.banner{
+    width: 85%;
+    height: 600px;
+    padding: 60px;
+    margin: 3em auto 0 auto;
+
+    box-shadow: -1px -2px 5px 13px rgb(45, 45, 45);
+}
+.banner figcaption{
+    float: right;
+    width: 40%;
+    height: 500px;
+    overflow: hidden;
+}
+.banner .texto{
+    width: 50%;
+    margin-top: 50px;
+    font-size: 22px;
+}
