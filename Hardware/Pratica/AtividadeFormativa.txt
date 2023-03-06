@@ -31,31 +31,41 @@ Computador que rode:
 
 
 ------------------------------------------------------------
-Processador:
-	- Intel Core i7-6700k 4.0GHz (91W) - R$ 598,68
-		Processador i7 de sexta geração com litografia de 14 nanômetros; 4 núcleos, 8 threads; DDR4 - 2666MHZ;
-		Processador foi escolhido devido a suas tecnologias e seu preço comparado com outros processadores de mesma capacidade e foi percebido um bom-custo-benefício
-Memória:
-	- 8GB
+-----Processador:
+	- Processador Intel® Core™ i3-12100F - R$ 625,32
+	- Processador i3 de décima segunda geração com litografia de 10 nanômetros; 4 núcleos, 8 threads; DDR4 - 3200MHZ; TDP - 89W; Frequência base de 3.30GHz
+		Processador foi escolhido devido a suas tecnologias e seu preço comparado com outros processadores de mesma capacidade (custo-beneficio) e por suas tecnológias que lhe permitem um rápido processamento
 
-Placa-mãe:
-	- 
+-----Memória:
+	- 2x Memória Ram DDR4 4GB 2400MHz JUHOR - R$117,96 (2x R$58,98)
+	- Frequência da memória: 2400Mhz; Memória: DDR4 4GB; Tipo de interface: 288pin
+	- Memória ram foi escolhido devida as suas tecnologias e seu preço comparado com outras memórias Ram de mesma capacidade (custo-beneficio), também foi optado obter duas memorias ram de 4GB ao invés de 8GB devido a tecnologia dual channel, que faz com que a memória do computador possa se comunicar com o processador por meio de duas vias de maneira simultânea.
 
-HD:
-	- 2GB + espaço livre adicional durante a instalação (Recomenda-se SSD - Illustrator)
+-----Placa-mãe:
+	- PLACA MAE MSI PRO H610M-G
+	- Suporta processadores Intel ® Core™ de 12ª geração; Soquete de processador LGA 1700; Suporte à Dual-Channel, frequência de 2400MHz e DDR4; Suporte a 1 slot PCIe x16 e PCIe 3.0; Suporte a NVMe M.2 para memória;
+	- Placa-mãe foi escolhida devido às suas tecnologias e seu preço comparado com outras placas-mãe presentes no mercado (custo-benefício), também foi optada devido a possibilidade de upgrade, visto que tem suporte para outras entradas mais "modernas", e também sendo possível atualizar processador e expandir memória ram.
 
-Placa de vídeo:
-	- GPU Intel Driver mais recentes que a versão 8.15.10.2702
-	- Mínimo de 1GB de VRAM (recomenda-se 4GB)
-	- Ser compatível com a versão 4.0 ou posterior do OpenGL
-	- Suporte para DirectX 12
-	- 1.5GB de memória de GPU
+-----HD:
+	- Kootion NVMe M.2 SSD 512GB - R$148,50
+	- Velocidade de escrita: 2100Mbps; Velocidade de leitura: 3000Mbps; Interface: PCI EXPRESS M.2 2280; Tipo de barramento PCIe 3,0x4; Tamanho: PCI-E
+	- Memória SSD foi escolhida devido às suas tecnologias e seu preço comparado com outras memórias SSD no mercado (custo-benefício), também foi escolhida devido à sua compatibilidade com outros componentes, e suas tecnologias de velocidade de leitura/escrita, e também à sua interface, aumentando a sua velocidade (NVMe M.2)
 
-Fonte:
+-----Placa de vídeo:
+	- Nvidia Galax GeForce GTX 16 Series GTX 1660 Ti - R$
+1.599
+	- 6GB VRAM; GDDR6; PCI-Express 3.0; 1800 MHz de frequência; Compatível com a versão 4.6 do OpenGL; Suporte para DIrectX 12
+	- Placa de vídeo foi escolhida devido as suas tecnologias e seu preço comparado com outras placas de vídeo do mercado (custo-benefício), também foi escolhida devido à sua capacidade de memória de vídeo (6GB) e seu suporte à softwares como DirectX e OpenGL
+
+-----Fonte:
+	- FONTE AEROCOOL KCAS FULL RANGE, 800W, 80 PLUS BRONZE , KCAS-800W
+	- Potência 800W; Compatível ATX12V; Tensão de entrada 115~230 VAC 6A 47 - 53Hz; PFC - Ativo; Selo 80 Plus Bronze
+	- Fonte foi escolhida devido à sua potência, selo, e conectores serem compatíveis com os outros componentes do computador, além de outras fontes do mercado (custo-benefício)
+
+-----Gabinte:
 	-
 
-Gabinte:
-	-
-
-Monitor:
-	- Resolução mínima de 1920x 1080 com 100% dimensionamento de interface do usuário
+-----Monitor:
+	- Monitor Soyo Led 21,5'' Full Hd Widescreen Sm215l01 Vga Hdmi
+	- Resolução - 1920 x 1080; Entrada HDMI; 21.5 polegadas;
+	- Monitor foi escolhido devido às suas proporções, resolução e seu preço comparado com outros monitores no mercado
