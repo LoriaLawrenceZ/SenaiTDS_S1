@@ -75,22 +75,22 @@ public class Exercicios{
         double num3 = in.nextDouble();
 
         if(num1 > num2 && num2 > num3){
-            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num2 +", "+ num3);
-        }
-        else if(num1 > num2 && num2 < num3){
-            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num3 +", "+ num2);
-        }
-        else if(num2 > num1 && num1 > num3){
-            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num1 +", "+ num3);
-        }
-        else if(num2 > num1 && num1 < num3){
-            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num3 +", "+ num1);
-        }
-        else if(num3 > num2 && num2 > num1){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num2 +", "+ num1);
         }
-        else if(num3 > num2 && num2 < num1){
+        /**/else if(num1 > num3 && num3 > num2){
+            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num3 +", "+ num1);
+        }
+        else if(num2 > num1 && num1 > num3){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num1 +", "+ num2);
+        }
+        /**/else if(num2 > num3 && num3 > num1){
+            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num3 +", "+ num2);
+        }
+        else if(num3 > num2 && num2 > num1){
+            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num2 +", "+ num3);
+        }
+        /**/else if(num3 > num1 && num1 > num2){
+            System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num1 +", "+ num3);
         }
     }
 
@@ -99,14 +99,41 @@ public class Exercicios{
         System.out.println("Insira seu sexo\n[1]-Feminino [2]-Masculino");
         int sexo = in.nextInt();
 
-        System.out.println("Insira sua altura (em centímetros)\n[Apenas números]");
-        int altura = in.nextInt();
+        System.out.println("Insira sua altura (em metros)\n[Apenas números]");
+        double altura = in.nextDouble();
 
         if(sexo == 1){
             System.out.println("O seu peso ideal seria de "+ ((72.7 * altura) - 58) +" kg");
         }
         else{
             System.out.println("O seu peso ideal seria de "+ ((62.1 * altura) - 44.7) +" kg");
+        }
+    }
+
+    /*Exercício 7*/
+    public void NotaFrequencia(){
+        System.out.println("Insira sua Primeira Nota. [0 - 10] \n[Apenas Números]");
+        double nota1 = in.nextDouble();
+
+        System.out.println("Insira sua Segunda Nota. [0 - 10]\n[Apenas Números]");
+        double nota2 = in.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        System.out.println("\nInforme a frequênca do aluno (Porcentagem).\n [Apenas Números]");
+        int frequenciaAluno = in.nextInt();
+
+        if(media >= 50 && frequenciaAluno >= 75){
+            System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está APROVADO");
+        }
+        else if(media >= 50 && frequenciaAluno < 75){
+            System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi REPROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
+        }
+        else if(media < 50 && frequenciaAluno >= 75){
+            System.out.println("O aluno foi REPROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
+        }
+        else{
+            System.out.println("O aluno foi REPROVADO por NOTA\nO aluno foi REPROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
         }
     }
 
@@ -146,10 +173,10 @@ public class Exercicios{
         String letra = in.next();
 
         if(letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")){
-            System.out.println("O caractere inserido é uma CONSOANTE");
+            System.out.println("O caractere inserido é uma VOGAL");
         }
         else{
-            System.out.println("O caractere inserido é uma VOGAL");
+            System.out.println("O caractere inserido é uma CONSOANTE");
         }
     }
 
