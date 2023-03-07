@@ -74,22 +74,22 @@ public class Exercicios{
         System.out.println("Insira um terceiro valor");
         double num3 = in.nextDouble();
 
-        if(num1 > num2 && num2 > num3){
+        if(num1 >= num2 && num2 >= num3){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num2 +", "+ num1);
         }
-        /**/else if(num1 > num3 && num3 > num2){
+        /**/else if(num1 >= num3 && num3 >= num2){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num3 +", "+ num1);
         }
-        else if(num2 > num1 && num1 > num3){
+        else if(num2 >= num1 && num1 >= num3){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num1 +", "+ num2);
         }
-        /**/else if(num2 > num3 && num3 > num1){
+        /**/else if(num2 >= num3 && num3 >= num1){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num3 +", "+ num2);
         }
-        else if(num3 > num2 && num2 > num1){
+        else if(num3 >= num2 && num2 >= num1){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num2 +", "+ num3);
         }
-        /**/else if(num3 > num1 && num1 > num2){
+        /**/else if(num3 >= num1 && num1 >= num2){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num1 +", "+ num3);
         }
     }
@@ -123,13 +123,13 @@ public class Exercicios{
         System.out.println("\nInforme a frequênca do aluno (Porcentagem).\n [Apenas Números]");
         int frequenciaAluno = in.nextInt();
 
-        if(media >= 50 && frequenciaAluno >= 75){
+        if(media >= 5 && frequenciaAluno >= 75){
             System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está APROVADO");
         }
-        else if(media >= 50 && frequenciaAluno < 75){
+        else if(media >= 5 && frequenciaAluno < 75){
             System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi REPROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
         }
-        else if(media < 50 && frequenciaAluno >= 75){
+        else if(media < 5 && frequenciaAluno >= 75){
             System.out.println("O aluno foi REPROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
         }
         else{
@@ -160,7 +160,7 @@ public class Exercicios{
             System.out.println("Aluno foi APROVADO");
         }
         else if(nota >=5 && nota < 7){
-            System.out.println("O aluno têm direito a fazer uma prova de recuperação");
+            System.out.println("O aluno tem direito a fazer uma prova de recuperação");
         }
         else{
             System.out.println("O aluno foi REPROVADO");
