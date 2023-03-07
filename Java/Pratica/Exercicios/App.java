@@ -17,7 +17,6 @@ public class App {
             System.out.println("\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[4] - Exercício 4\n[5] - Exercício 5\n[6]- Exercício 6\n[7] - Exercício 7\n[8] - Exercício Extra 1\n[9] - Exercício Extra 2\n[10] - Exercício Extra 3\n[11] - Exercício Extra 4\n[12] - Exercício Extra 5\n[Apenas Números]");
 
             escolha = in.next();
-            
 
             switch (escolha) {
                 case "1":
