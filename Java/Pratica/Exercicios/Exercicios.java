@@ -74,22 +74,22 @@ public class Exercicios{
         System.out.println("Insira um terceiro valor");
         double num3 = in.nextDouble();
 
-        if(num1 >= num2 && num2 >= num3){
+        if(num1 >= num2 & num2 >= num3){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num2 +", "+ num1);
         }
-        /**/else if(num1 >= num3 && num3 >= num2){
+        else if(num1 >= num3 & num3 >= num2){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num3 +", "+ num1);
         }
-        else if(num2 >= num1 && num1 >= num3){
+        else if(num2 >= num1 & num1 >= num3){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num3 +", "+ num1 +", "+ num2);
         }
-        /**/else if(num2 >= num3 && num3 >= num1){
+        else if(num2 >= num3 & num3 >= num1){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num3 +", "+ num2);
         }
-        else if(num3 >= num2 && num2 >= num1){
+        else if(num3 >= num2 & num2 >= num1){
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num1 +", "+ num2 +", "+ num3);
         }
-        /**/else if(num3 >= num1 && num1 >= num2){
+        else{
             System.out.println("Os valores dados escritos em ordem crescente será:\n"+ num2 +", "+ num1 +", "+ num3);
         }
     }
@@ -123,13 +123,13 @@ public class Exercicios{
         System.out.println("\nInforme a frequênca do aluno (Porcentagem).\n [Apenas Números]");
         int frequenciaAluno = in.nextInt();
 
-        if(media >= 5 && frequenciaAluno >= 75){
+        if(media >= 5 & frequenciaAluno >= 75){
             System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está APROVADO");
         }
-        else if(media >= 5 && frequenciaAluno < 75){
+        else if(media >= 5 & frequenciaAluno < 75){
             System.out.println("O aluno foi APROVADO por NOTA\nO aluno foi REPROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
         }
-        else if(media < 5 && frequenciaAluno >= 75){
+        else if(media < 5 & frequenciaAluno >= 75){
             System.out.println("O aluno foi REPROVADO por NOTA\nO aluno foi APROVADO por FREQUÊNCIA\nPortanto o aluno está REPROVADO");
         }
         else{
@@ -172,7 +172,7 @@ public class Exercicios{
         System.out.println("Insira um único caractere para que seja verificado se é uma consoante ou uma vogal");
         String letra = in.next();
 
-        if(letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")){
+        if(letra.equalsIgnoreCase("a") | letra.equalsIgnoreCase("e") | letra.equalsIgnoreCase("i") | letra.equalsIgnoreCase("o") | letra.equalsIgnoreCase("u")){
             System.out.println("O caractere inserido é uma VOGAL");
         }
         else{
@@ -188,10 +188,10 @@ public class Exercicios{
         if(salario <= 1280){
             System.out.println("Salário antes do reajuste: R$ "+ salario +"\nPercentual de aumento aplicado: 20%\nValor do aumento: "+ (salario * 0.2) +"\nSalário pós reajuste: R$ "+ (salario * 1.2));
         }
-        else if(salario > 1280 && salario <= 1700){
+        else if(salario > 1280 & salario <= 1700){
             System.out.println("Salário antes do reajuste: R$ "+ salario +"\nPercentual de aumento aplicado: 15%\nValor do aumento: "+ (salario * 0.15) +"\nSalário pós reajuste: R$ "+ (salario * 1.15));
         }
-        else if(salario > 1700 && salario <= 2500){
+        else if(salario > 1700 & salario <= 2500){
             System.out.println("Salário antes do reajuste: R$ "+ salario +"\nPercentual de aumento aplicado: 10%\nValor do aumento: "+ (salario * 0.1) +"\nSalário pós reajuste: R$ "+ (salario * 1.1));
         }
         else{
