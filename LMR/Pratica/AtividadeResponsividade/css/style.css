@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*------Mexendo universalmente------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
+/*
+article{
+    background-position-x: center;
+    background-image: url(../img/SoldadorBG.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+*/
+
+
+/*------Navigation Bar------*/
+nav{
+    height: 3em;
+    background: rgb(255, 0, 0);
+}
+.nav-img{
+    width: 30%;
+    height: 3em;
+    float: left;
+    text-align: center;
+}
+.nav-img img{
+    height: 3em;
+}
+.nav-bar{
+    width: 70%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+}
+.nav-bar li{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    padding: 0 2em;
+    display: inline-block;
+}
+.nav-bar li a{
+    padding: .5em .5em;
+    color: white;
+    text-decoration: none;
+}
+
+/*------Article APRESENTACAO------*/
+.apresentacao{
+    background-color: rgba(255, 0, 221, 0.15);
+    height: 30em;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+}
+.apresentacao section{
+    width: 50%;
+}
+.apresentacao section h1{
+    color: white;
+    font-size: 114px;
+    font-family: 'Teko', sans-serif;
+}
+.apresentacao section h2{
+    font-family: 'Courier Prime', monospace;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+}
+
+/*------Article PROJETOS------*/
+.projetos{
+    background-color: rgba(25, 0, 255, 0.15);
+}
+.projetos h1{
+    padding: 1em 1em 0 1em;
+    color: rgb(255, 0, 0);
+    font-size: 80px;
+    font-family: 'Teko', sans-serif;
+}
+.projetos section{
+    padding: 2em 3em 3em 3em;
+    display: flex;
+}
+.img-projetos{
+    width: 50%;
+    height: 30em;
+    overflow: hidden;
+    margin: 0 5em 0 0;
+}
+.img-projetos img{
+    transform: translateX(-25%);
+}
+.conteudo{
+    width: 50%;
+}
+
+.projetos section h2, .projetos section h3{
+    color: white;
+}

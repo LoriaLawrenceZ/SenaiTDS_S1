@@ -58,12 +58,54 @@ nav{
     font-size: 22px;
 }
 /*Responivity*/
-@media screen and (max-width: 998px){
+@media screen and (max-width: 1000px){
     .banner{
         height: 480px;
-        padding: 0px 20px;
+        padding: 20px;
     }
-    .figcaption{
+    .banner .texto{
+        font-size: 24px;
+    }
+    .banner h1{
+        font-size: 28px;
+        padding: 2em 0 0 0;
+    }
+    .banner h2{
+        font-size: 14px;
+    }
+    figcaption{
         height: 480px;
+        margin-top: 90px;
+    }
+    .banner a{
+        padding: 3px 10px;
+        background-color: black;
+        font-size: 12px;
+        color: aliceblue;
+        text-decoration: none;
+        border-radius: .25em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .banner{
+        padding: 0px 20px 20px;
+    }
+    .banner .texto{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .banner h1{
+        font-size: 18px;
+    }
+    .banner h2{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .banner figcaption{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
     }
 }
