@@ -1,13 +1,15 @@
 @charset "UTF-8";
+
 /*------Mexendo universalmente------*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     background-color: black;
 }
+
 /*
 article{
     background-position-x: center;
@@ -19,89 +21,302 @@ article{
 
 
 /*------Navigation Bar------*/
-nav{
-    height: 3em;
+nav {
     background: rgb(255, 0, 0);
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
-.nav-img{
+
+.nav-img {
     width: 30%;
     height: 3em;
     float: left;
     text-align: center;
 }
-.nav-img img{
+
+.nav-img img {
     height: 3em;
 }
-.nav-bar{
+
+.nav-bar {
     width: 70%;
-    height: inherit;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    float: right;
     list-style: none;
 }
-.nav-bar li{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    padding: 0 2em;
+
+.nav-bar li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
     display: inline-block;
 }
-.nav-bar li a{
-    padding: .5em .5em;
+.nav-bar li a:hover{
+    background-color: rgb(165, 0, 0);
+}
+
+.nav-bar li a {
+    padding: 1em 2em;
+    cursor: pointer;
     color: white;
     text-decoration: none;
 }
 
 /*------Article APRESENTACAO------*/
-.apresentacao{
-    background-color: rgba(255, 0, 221, 0.15);
-    height: 30em;
-    padding: 3em;
+.apresentacao {
+    background-image: url(../img/programming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
     display: flex;
     align-items: center;
 }
-.apresentacao section{
+
+.apresentacao section {
     width: 50%;
 }
-.apresentacao section h1{
+
+.apresentacao section h1 {
     color: white;
-    font-size: 114px;
+    font-size: 108px;
     font-family: 'Teko', sans-serif;
 }
-.apresentacao section h2{
+
+.apresentacao section h2 {
     font-family: 'Courier Prime', monospace;
-    font-size: 60px;
-    color: rgb(255, 0, 0);
+    font-size: 50px;
+    color: rgb(255, 0, 34);
 }
 
 /*------Article PROJETOS------*/
-.projetos{
-    background-color: rgba(25, 0, 255, 0.15);
+.projetos {
+    background-color: rgba(14, 0, 141, 0.15);
 }
-.projetos h1{
-    padding: 1em 1em 0 1em;
-    color: rgb(255, 0, 0);
-    font-size: 80px;
+
+.projetos h1 {
+    padding: 5% 5% .5em 5%;
+    color: rgb(207, 0, 34);
+    font-size: 70px;
     font-family: 'Teko', sans-serif;
 }
-.projetos section{
-    padding: 2em 3em 3em 3em;
+
+.projetos section {
+    padding: 0 3em 3em 5%;
     display: flex;
 }
-.img-projetos{
+
+.img-projetos {
     width: 50%;
     height: 30em;
     overflow: hidden;
-    margin: 0 5em 0 0;
+    margin: 0 8% 0 0;
 }
-.img-projetos img{
-    transform: translateX(-25%);
-}
-.conteudo{
+
+.conteudo {
     width: 50%;
 }
 
-.projetos section h2, .projetos section h3{
+.conteudo p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
     color: white;
+}
+
+.conteudo h2 {
+    color: rgb(224, 169, 16);
+    font-size: 68px;
+    font-family: 'Teko', sans-serif;
+}
+
+.conteudo h3 {
+    color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-bar li a:hover{
+        background-color: rgb(165, 0, 0);
+    }
+
+    /*------Article APRESENTACAO------*/
+    .apresentacao {
+        padding: 4% 4% 4% 5%;
+    }
+
+    .apresentacao section h1 {
+        font-size: 80px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 40px;
+    }
+
+    /*------Article PROJETOS------*/
+    .projetos h1 {
+        padding: 4% 4% 0 5%;
+        font-size: 54px;
+    }
+
+    .projetos section {
+        padding: 2em 3em 3em 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteudo {
+        align-self: flex-start;
+    }
+
+    .conteudo p {
+        font-size: 28px;
+    }
+
+    .conteudo h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar li a:hover{
+        background-color: rgb(165, 0, 0);
+    }
+
+    /*------Article APRESENTACAO------*/
+    .apresentacao section h1 {
+        font-size: 66px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 34px;
+    }
+
+    /*------Article PROJETOS------*/
+    .projetos h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .projetos section {
+        padding: 2em 7% 2em 7%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-projetos {
+        order: 2;
+        margin: 4% 0 0 0;
+        width: 100%;
+    }
+
+    .img-projetos {
+        height: 20em;
+    }
+
+    .conteudo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .conteudo p {
+        font-size: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 48px;
+    }
+
+    .conteudo h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /*------Navigation Bar------*/
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    .nav-bar {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-bar li {
+        padding: 1em 0;
+    }
+    .nav-bar li a:hover{
+        background-color: rgb(165, 0, 0);
+    }
+
+    /*------Article APRESENTACAO------*/
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .apresentacao section {
+        text-align: center;
+        width: 100%;
+    }
+
+    .apresentacao section h1 {
+        font-size: 60px;
+    }
+
+    .apresentacao section h2 {
+        font-size: 30px;
+    }
+
+    /*------Article PROJETOS------*/
+    .projetos h1 {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .conteudo p {
+        font-size: 18px;
+    }
+
+    .conteudo h2 {
+        font-size: 40px;
+    }
+
+    .conteudo h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*------Navigation Bar------*/
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    .nav-bar {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-bar li {
+        padding: 2% 0;
+        width: 100%;
+    }
+    .nav-bar li a{
+        padding: 2% 2em;
+    }
+    .nav-bar li:hover{
+        background-color: rgb(165, 0, 0);
+    }
 }
