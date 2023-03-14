@@ -6,7 +6,7 @@ public class Exercicios{
     Scanner in = new Scanner(System.in, "latin1");
 
     /*Exercício 1*/
-    public void Compara(){
+    public void compara(){
         System.out.println("Insira um primeiro número");
         double num1 = in.nextDouble();
 
@@ -25,7 +25,7 @@ public class Exercicios{
     }
 
     /*Exercício 2*/
-    public void Votar(){
+    public void votar(){
         System.out.println("insira o seu ano de nascimento\n[Apenas números]");
         int anoNascimento = in.nextInt();
 
@@ -38,7 +38,7 @@ public class Exercicios{
     }
 
     /*Exercício 3*/
-    public void Validacao(){
+    public void validacao(){
         System.out.println("insira a sua senha.");
         String senha = in.next();
 
@@ -51,7 +51,7 @@ public class Exercicios{
     }
 
     /*Exercício 4*/
-    public void DuziaMaca(){
+    public void duziaMaca(){
         System.out.println("Caso compre menos que uma dúzia de maçãs, cada uma sairá por R$ 0,30\nCaso compre ao menos uma dúzia de maçãs, cada maçã saíra por R$ 0,25\nQuantas maçãs deseja comprar?");
         int quantidadeMaca = in.nextInt();
 
@@ -64,7 +64,7 @@ public class Exercicios{
     }
 
     /*Exercício 5*/
-    public void TresValores(){
+    public void tresValores(){
         System.out.println("Insira um valor");
         double num1 = in.nextDouble();
 
@@ -95,7 +95,7 @@ public class Exercicios{
     }
 
     /*Exercício 6*/
-    public void PesoIdeal(){
+    public void pesoIdeal(){
         System.out.println("Insira seu sexo\n[1]-Feminino [2]-Masculino");
         int sexo = in.nextInt();
 
@@ -111,7 +111,7 @@ public class Exercicios{
     }
 
     /*Exercício 7*/
-    public void NotaFrequencia(){
+    public void notaFrequencia(){
         System.out.println("Insira sua Primeira Nota. [0 - 10] \n[Apenas Números]");
         double nota1 = in.nextDouble();
 
@@ -138,7 +138,7 @@ public class Exercicios{
     }
 
     /*Exercício Extra 1*/
-    public void ImparOuPar(){
+    public void imparOuPar(){
         System.out.println("Insira um valor inteiro. [Número]");
 
         int num1 = in.nextInt();
@@ -152,7 +152,7 @@ public class Exercicios{
     }
 
     /*Exercício Extra 2*/
-    public void PassaReprova(){
+    public void passaReprova(){
         System.out.println("Insira a nota do aluno.\n[Apenas números] [0 - 10]");
         double nota = in.nextDouble();
 
@@ -168,7 +168,7 @@ public class Exercicios{
     }
 
     /*Exercício Extra 3*/
-    public void VogalConsoante(){
+    public void vogalConsoante(){
         System.out.println("Insira um único caractere para que seja verificado se é uma consoante ou uma vogal");
         String letra = in.next();
 
@@ -181,7 +181,7 @@ public class Exercicios{
     }
 
     /*Exercício Extra 4 (Difícil)*/
-    public void SalarioColaborador(){
+    public void salarioColaborador(){
         System.out.println("Insira o salário do colaborador para que possa ser feito o cálculo do reajuste.\n[Apenas números]");
         double salario = in.nextDouble();
 
@@ -200,7 +200,7 @@ public class Exercicios{
     }
 
     /*Exercício Extra 5 (Difícil)*/
-    public void FolhaPagamento(){
+    public void folhaPagamento(){
         System.out.println("Informe o valor da hora trabalhada.\n[Apenas números]");
         double valorHora = in.nextDouble();
 
