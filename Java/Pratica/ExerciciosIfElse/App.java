@@ -20,51 +20,51 @@ public class App {
 
             switch (escolha) {
                 case "1":
-                    exercicios.Compara();
+                    exercicios.compara();
                     break;
     
                 case "2":
-                    exercicios.Votar();
+                    exercicios.votar();
                     break;
                 
                 case "3":
-                    exercicios.Validacao();
+                    exercicios.validacao();
                     break;
     
                 case "4":
-                    exercicios.DuziaMaca();
+                    exercicios.duziaMaca();
                     break;
     
                 case "5":
-                    exercicios.TresValores();
+                    exercicios.tresValores();
                     break;
     
                 case "6":
-                    exercicios.PesoIdeal();
+                    exercicios.pesoIdeal();
                     break;
     
                 case "7":
-                    exercicios.NotaFrequencia();
+                    exercicios.notaFrequencia();
                     break;
     
                 case "8":
-                    exercicios.ImparOuPar();
+                    exercicios.imparOuPar();
                     break;
     
                 case "9":
-                    exercicios.PassaReprova();
+                    exercicios.passaReprova();
                     break;
     
                 case "10":
-                    exercicios.VogalConsoante();
+                    exercicios.vogalConsoante();
                     break;
     
                 case "11":
-                    exercicios.SalarioColaborador();
+                    exercicios.salarioColaborador();
                     break;
     
                 case "12":
-                    exercicios.FolhaPagamento();
+                    exercicios.folhaPagamento();
                     break;
 
                 case "S":
