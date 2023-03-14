@@ -13,7 +13,7 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[S] - SAIR\n[Apenas Números]");
     
             escolha = in.next();
     
@@ -24,6 +24,11 @@ public class App {
     
                 case "2":
                     exercicios.NumeroMes();
+                    break;
+
+                case "S":
+                    System.out.println("----====Encerrando Programa====----");
+                    escolha = "N";
                     break;
     
                 default:
