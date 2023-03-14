@@ -8,7 +8,7 @@ public class App {
     
         Exercicios exercicios = new Exercicios();
     
-        String escolha ;
+        String escolha = "";
     
         do
         {

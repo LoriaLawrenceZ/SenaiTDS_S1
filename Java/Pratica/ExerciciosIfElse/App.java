@@ -75,7 +75,6 @@ public class App {
 
         } while (escolha != "N");
 
-
         in.close();
     }
 }
