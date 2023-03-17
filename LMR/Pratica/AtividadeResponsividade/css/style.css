@@ -255,7 +255,7 @@ nav {
     }
     .nav-bar:hover .nav-content{
         transition: .2s;
-        width: 30%;
+        width: 100%;
         background-color: red;
         display: flex;
         flex-direction: column;
