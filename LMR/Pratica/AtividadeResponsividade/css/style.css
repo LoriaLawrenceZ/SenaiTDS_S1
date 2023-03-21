@@ -32,8 +32,6 @@ nav {
 .nav-img {
     height: 3em;
 
-    flex-basis: 20%;
-
     display: flex;
     justify-content: center;
 }
@@ -122,6 +120,9 @@ nav {
     height: 30em;
     overflow: hidden;
     margin: 0 8% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo {
