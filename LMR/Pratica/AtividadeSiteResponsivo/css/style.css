@@ -1,145 +1,156 @@
 @charset "UTF-8";
 
-/*------Mexendo universalmente------*/
-* {
-    margin: 0;
-    padding: 0;
-}
+/*----Mexendo UNIVERSALMENTE----*/
+*{margin: 0; padding: 0;}
 
-html {
+html{
     background-color: black;
 }
 
-/*
-article{
-    background-position-x: center;
-    background-image: url(../img/SoldadorBG.jpg);
-    background-repeat: no-repeat;
-    opacity: 0.5;
-}
-*/
-
-
-/*------Navigation Bar------*/
-nav {
-    background: rgb(255, 0, 0);
+/*----Navigation Bar----*/
+header{
+    background-color: red;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
-
-.nav-img {
+.img-logo-senai{
     height: 3em;
-
-    display: flex;
-    justify-content: center;
+    display: block;
 }
-.nav-img img {
-    height: 3em;
+nav{
+    width: 100%;
 }
-
-.nav-bar{
-    flex-basis: 80%;
-}
-.nav-bar .button{
-    display: none;
-    filter: invert();
-}
-.nav-bar .nav-content{
+.nav-content{
     display: flex;
     justify-content: space-around;
 }
-.nav-bar a{
-    text-decoration: none;
+.nav-content a{
     color: white;
+    text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
+    
+    transition: .3s;
+    
+    flex-basis: 25%;
+    text-align: center;
 }
-.nav-bar a:hover{
-    background-color: rgb(255, 255, 255);
+.nav-content a:hover .nav-content{
+    height: 3em;
+}
+.nav-content a:hover{
     color: red;
+    background-color: white;
 
-    transition: .5s;
+    height: inherit;
+
+    transition: .3s;
 }
 
-/*------Article APRESENTACAO------*/
-.apresentacao {
-    background-image: url(../img/programming.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5%;
+.btn-hamburguer{
+    display: none;
+}
+
+/*----Apresentação----*/
+.apresentacao{
+    height: 30em;
+
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-}
 
-.apresentacao section {
+    background-image: url(../img/programming.jpg);
+    background-size: cover;
+}
+.apresentacao-conteudo{
+    width: 45%;
+}
+.apresentacao-conteudo h1{
+    color: white;
+    font-size: 84px;
+    font-family: 'Teko', sans-serif;
+}
+.apresentacao-conteudo h2{
+    font-family: 'Courier Prime', monospace;
+    font-size: 44px;
+    color: rgb(255, 0, 34);
+}
+.podeisso{
     width: 50%;
 }
 
-.apresentacao section h1 {
-    color: white;
-    font-size: 108px;
-    font-family: 'Teko', sans-serif;
-}
-
-.apresentacao section h2 {
-    font-family: 'Courier Prime', monospace;
-    font-size: 50px;
-    color: rgb(255, 0, 34);
-}
-
-/*------Article PROJETOS------*/
-.projetos {
+/*----Projetos----*/
+.projetos{
     background-color: rgba(14, 0, 141, 0.15);
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
-.projetos h1 {
-    padding: 5% 5% .5em 5%;
+.projetos-title{
+    width: 45%;
+    height: 2em;
+
+    align-self: flex-end;
+
     color: rgb(207, 0, 34);
-    font-size: 70px;
+    font-size: 58px;
     font-family: 'Teko', sans-serif;
 }
-.participante{
+.podeisso-title{
+    width: 50%;
+}
+.podeisso-subtitle{
+    width: 50%;
+}
+.projetos-subtitle{
+    height: 2em;
+    width: 50%;
+
+    justify-self: flex-start;
     font-family: 'Courier Prime', monospace;
     font-size: 30px;
     color: white;
-
-    align-self: flex-end;
 }
 
-.projetos section {
-    padding: 0 3em 3em 5%;
-    display: flex;
-}
-
-.img-projetos {
-    width: 50%;
+.img-e-conteudo{
     height: 30em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.projetos-container-img{
+    height: 90%;
+    width: 40%;
+
     overflow: hidden;
-    margin: 0 8% 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.conteudo {
-    width: 50%;
+.podeisso-conteudo{
+    width: 5%;
 }
 
-.conteudo h2 {
+.projetos-conteudo{
+    width: 45%;
+}
+.projetos-conteudo h2{
     color: rgb(224, 169, 16);
-    font-size: 68px;
+    font-size: 58px;
     font-family: 'Teko', sans-serif;
 }
-.conteudo h3 {
+.projetos-conteudo h3{
     color: white;
 }
 
+/*
 @media screen and (max-width: 1400px) {
-    /*------Article APRESENTACAO------*/
+    /*------Article APRESENTACAO------
     .apresentacao {
         padding: 4% 4% 4% 5%;
     }
@@ -152,7 +163,7 @@ nav {
         font-size: 40px;
     }
 
-    /*------Article PROJETOS------*/
+    /*------Article PROJETOS------
     .projetos h1 {
         padding: 4% 4% 0 5%;
         font-size: 54px;
@@ -178,7 +189,7 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-    /*------Article APRESENTACAO------*/
+    /*------Article APRESENTACAO------
     .apresentacao section h1 {
         font-size: 66px;
     }
@@ -187,7 +198,7 @@ nav {
         font-size: 34px;
     }
 
-    /*------Article PROJETOS------*/
+    /*------Article PROJETOS------
     .projetos h1 {
         font-size: 50px;
         text-align: center;
@@ -229,7 +240,7 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-    /*------Navigation Bar------*/
+    /*------Navigation Bar------
     nav {
         flex-direction: row-reverse;
     }
@@ -262,7 +273,7 @@ nav {
         flex-direction: column;
     }
 
-    /*------Article APRESENTACAO------*/
+    /*------Article APRESENTACAO------
     .apresentacao {
         display: flex;
         align-items: center;
@@ -282,7 +293,7 @@ nav {
         font-size: 30px;
     }
 
-    /*------Article PROJETOS------*/
+    /*------Article PROJETOS------
     .projetos h1 {
         font-size: 46px;
         text-align: center;
@@ -302,7 +313,7 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
-    /*------Navigation Bar------*/
+    /*------Navigation Bar------
     nav {
         flex-direction: row-reverse;
     }
@@ -336,3 +347,4 @@ nav {
         flex-direction: column;
     }
 }
+*/
