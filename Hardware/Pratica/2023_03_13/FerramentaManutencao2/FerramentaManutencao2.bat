@@ -253,7 +253,7 @@ cls
 echo  ======================================================
 echo *     Ferramenta de Melhoria do Windows - Exclusao     *
 echo  ======================================================
-DISM /Online /Cleanup-image /Restorehealth
+DISM.exe /Online /Cleanup-image /Restorehealth
 pause
 goto menu
 
