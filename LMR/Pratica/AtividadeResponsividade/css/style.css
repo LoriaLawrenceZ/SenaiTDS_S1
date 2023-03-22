@@ -25,40 +25,42 @@ nav {
     background: rgb(255, 0, 0);
 
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-img {
-    width: 30%;
     height: 3em;
-    float: left;
-    text-align: center;
-}
 
+    display: flex;
+    justify-content: center;
+}
 .nav-img img {
     height: 3em;
 }
 
-.nav-bar {
-    width: 70%;
-    list-style: none;
+.nav-bar{
+    flex-basis: 80%;
 }
-
-.nav-bar li {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 0;
-    display: inline-block;
+.nav-bar .button{
+    display: none;
+    filter: invert();
 }
-.nav-bar li a:hover{
-    background-color: rgb(165, 0, 0);
+.nav-bar .nav-content{
+    display: flex;
+    justify-content: space-around;
 }
-
-.nav-bar li a {
-    padding: 1em 2em;
-    cursor: pointer;
-    color: white;
+.nav-bar a{
     text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+}
+.nav-bar a:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+
+    transition: .5s;
 }
 
 /*------Article APRESENTACAO------*/
@@ -90,13 +92,22 @@ nav {
 /*------Article PROJETOS------*/
 .projetos {
     background-color: rgba(14, 0, 141, 0.15);
-}
 
+    display: flex;
+    flex-direction: column;
+}
 .projetos h1 {
     padding: 5% 5% .5em 5%;
     color: rgb(207, 0, 34);
     font-size: 70px;
     font-family: 'Teko', sans-serif;
+}
+.participante{
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+    color: white;
+
+    align-self: flex-end;
 }
 
 .projetos section {
@@ -109,16 +120,13 @@ nav {
     height: 30em;
     overflow: hidden;
     margin: 0 8% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo {
     width: 50%;
-}
-
-.conteudo p {
-    font-family: 'Courier Prime', monospace;
-    font-size: 30px;
-    color: white;
 }
 
 .conteudo h2 {
@@ -126,16 +134,11 @@ nav {
     font-size: 68px;
     font-family: 'Teko', sans-serif;
 }
-
 .conteudo h3 {
     color: white;
 }
 
 @media screen and (max-width: 1400px) {
-    .nav-bar li a:hover{
-        background-color: rgb(165, 0, 0);
-    }
-
     /*------Article APRESENTACAO------*/
     .apresentacao {
         padding: 4% 4% 4% 5%;
@@ -175,10 +178,6 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-    .nav-bar li a:hover{
-        background-color: rgb(165, 0, 0);
-    }
-
     /*------Article APRESENTACAO------*/
     .apresentacao section h1 {
         font-size: 66px;
@@ -230,27 +229,37 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-
     /*------Navigation Bar------*/
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row-reverse;
     }
-
     .nav-img {
+        flex-basis: 100%;
+    }
+    .nav-bar{
+        flex-basis: 0%;
+    }
+    .nav-bar .button{
+        transition: .2s;
+        height: 3em;
+        cursor: pointer;
+        display: block;
+    }
+    .nav-bar .nav-content{
+        transition: .2s;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    .nav-bar:hover .button{
+        transition: .2s;
+    }
+    .nav-bar:hover .nav-content{
+        transition: .2s;
         width: 100%;
-    }
-
-    .nav-bar {
-        text-align: center;
-        width: 100%;
-    }
-
-    .nav-bar li {
-        padding: 1em 0;
-    }
-    .nav-bar li a:hover{
-        background-color: rgb(165, 0, 0);
+        background-color: red;
+        display: flex;
+        flex-direction: column;
     }
 
     /*------Article APRESENTACAO------*/
@@ -293,30 +302,37 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
-
     /*------Navigation Bar------*/
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row-reverse;
     }
-
     .nav-img {
-        width: 100%;
+        flex-basis: 100%;
     }
-
-    .nav-bar {
+    .nav-bar{
+        flex-basis: 0%;
+    }
+    .nav-bar .button{
+        transition: .2s;
+        height: 3em;
+        cursor: pointer;
+        display: block;
+    }
+    .nav-bar .nav-content{
+        transition: .2s;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    .nav-bar:hover .button{
+        transition: .2s;
+    }
+    .nav-bar:hover .nav-content{
+        transition: .2s;
         text-align: center;
         width: 100%;
-    }
-
-    .nav-bar li {
-        padding: 2% 0;
-        width: 100%;
-    }
-    .nav-bar li a{
-        padding: 2% 2em;
-    }
-    .nav-bar li:hover{
-        background-color: rgb(165, 0, 0);
+        background-color: red;
+        display: flex;
+        flex-direction: column;
     }
 }
