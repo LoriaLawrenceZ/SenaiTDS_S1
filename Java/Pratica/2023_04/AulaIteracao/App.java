@@ -13,21 +13,21 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual EXEMPLO deseja ver:\n[1] - WHILE\n[2] - DO WHILE\n[3] - FOR\n[S] - SAIR\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual EXEMPLO deseja ver:\n[1] - Exemplo 1\n[2] - Exemplo 2\n[3] - Exemplo 3\n[S] - SAIR\n[Apenas Números]");
     
             escolha = in.next();
     
             switch (escolha) {
                 case "1":
-                    obj.ExemploWhile();
+                    obj.Exemplo1();
                     break;
     
                 case "2":
-                    obj.ExemploDoWhile();
+                    obj.Exemplo2();
                     break;
                 
                 case "3":
-                    obj.ExemploFor();
+                    obj.Exemplo3();
                     break;
 
                 case "S":

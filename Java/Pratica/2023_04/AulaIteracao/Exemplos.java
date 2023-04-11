@@ -1,11 +1,12 @@
 package AulaIteracao;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Exemplos {
     Scanner sc = new Scanner(System.in, "latin1");
 
-    public void ExemploWhile(){
+    public void Exemplo1(){
         int vetor[] = new int[10];
         int i = 0;
 
@@ -22,8 +23,28 @@ public class Exemplos {
             System.out.print(vetor[i] +"; ");
         }
     }
+    
+    public void Exemplo2(){
+        Random rd = new Random();
 
-    public void ExemploDoWhile(){
+        int nDigitado, nRandom = rd.nextInt(10)+1;
+        boolean tenteDNV = true;
+
+        while(tenteDNV){
+            System.out.println("Digite um número de 1 a 10");
+            nDigitado = sc.nextInt();
+
+            if (nDigitado == nRandom){
+                System.out.println("Acertou!");
+                tenteDNV = false;
+            }
+            else{
+                System.out.println("Errou! Tente novamente");
+            }
+        }
+    }
+
+    public void Exemplo3(){
         
     }
 
