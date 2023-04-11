@@ -45,8 +45,19 @@ public class Exemplos {
     }
 
     public void Exemplo3(){
-        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("O número da iteração é "+ i);
+        }
     }
 
-    public void ExemploFor(){}
+    public void Exemplo4(){
+        double carrinhoCompra[] = new double[]{25.50, 55.90, 69.99};
+        double valorFinalCompra = 0;
+
+        for (int i = 0; i < carrinhoCompra.length; i++) {
+            valorFinalCompra += carrinhoCompra[i];
+        }
+
+        System.out.println("O valor total da compra é: R$ "+ valorFinalCompra);
+    }
 }

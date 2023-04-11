@@ -13,7 +13,7 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual EXEMPLO deseja ver:\n[1] - Exemplo 1\n[2] - Exemplo 2\n[3] - Exemplo 3\n[S] - SAIR\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual EXEMPLO deseja ver:\n[1] - Exemplo 1\n[2] - Exemplo 2\n[3] - Exemplo 3\n[4] - Exemplo 4\n[S] - SAIR\n[Apenas Números]");
     
             escolha = in.next();
     
@@ -29,6 +29,9 @@ public class App {
                 case "3":
                     obj.Exemplo3();
                     break;
+
+                case "4":
+                    obj.Exemplo4();
 
                 case "S":
                     System.out.println("----====Encerrando Programa====----");
