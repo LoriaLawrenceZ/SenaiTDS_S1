@@ -1,0 +1,65 @@
+4 Salas
+
+    - Tarefas Administrativas
+        > Sec1 (Stand-alone)
+            . Registro de notas e emissão de boletins na impressora jato de tinta [Sprn1]
+        > Sec2 (Stand-alone)
+            . Registro de pagamentos efetuados e emissão dos carnês na impressora laser [Sprn2]
+
+        Info:
+            {Boletim dos alunos só pode ser emitido se os pagamentos estiverem em dia}
+            {Tranferir por [pendrive] arquivos de [Sec2] para [Sec1] todo dia}
+
+    - Biblioteca
+        > Bib1
+            . Disposição dos alunos para consulta de livros e registro de empréstimo e devolução
+        
+        Info:
+            {O sistema só libera empréstimos para alunos com os pagamentos em dia}
+            {Secretária passa de [Sec2] para [Bib1]}
+            {[Bib1] para [Sprn1] para impressão do cartão de emprestiom e devolução}
+
+
+
+    - Sala dos Professores
+        > Prof1
+            . Preparação de aulas e lançamento de notas
+        > Prof2
+            . Acesso à Internet e ao correio eletrônico
+        > Chaveador ligado a duas impressoras jato de tinta colorida
+            . [Pprn1] e [Pprn2] (impressão de correio eletrônico e programa de aula)
+
+        Info:
+            {Notas lançadas copiadas para [Sec1], possibilitar a geração de boletins, pois só serão emitidos caso o pagamento esteja em dia}
+
+
+
+    - Sala de Estudos
+        > Est1
+            . Pesquisas na Internet e imprimir os resultados na impressora jato de tinta colorida [Eprn1]
+
+--------------------------------------------------------------------------------------------------------------
+Computadores:
+    Sec1
+    Sec2
+    Bib1
+    Prof1
+    Prof2
+    Est1
+
+Periféricos:
+    Sprn1
+    Sprn2
+    Pendrive
+    Pprn1
+    Pprn2
+    Chaveador
+    Eprn1
+
+Troca:
+    Sec1 <pendrive> Sec2
+    Sec2 <pendrive> Bib1
+    Bib1 <pendrive> Sprn1
+    Est1 <> Eprn1
+    Prof1 <pendrive> Sec1
+    Pprn1 <chaveador> Pprn2
