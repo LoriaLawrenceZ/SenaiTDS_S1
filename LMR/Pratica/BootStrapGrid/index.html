@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+        <div class="col-md-1 bg-black text-bg-primary">1</div>
+        <div class="col-md-1 bg-secondary text-bg-primary">1</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 bg-black text-bg-primary">4</div>
+        <div class="col-sm-4 bg-secondary text-bg-primary">4</div>
+        <div class="col-sm-4 bg-black text-bg-primary">4</div>
+    </div>
+    <div class="row">
+        <div class="col-4 bg-black text-bg-primary">4</div>
+        <div class="col-8 bg-secondary text-bg-primary">8</div>
+    </div>
+    <div class="row">
+        <div class="col-6 bg-black text-bg-primary">6</div>
+        <div class="col-6 bg-secondary text-bg-primary">6</div>
+    </div>
+    <div class="row">
+        <div class="col-12 bg-black text-bg-primary">12</div>
+    </div>
+    <div class="row">
+        <div class="col-4 bg-black text-bg-primary">4</div>
+        <div class="col-4 bg-black text-bg-primary offset-4">4</div>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-3 bg-secondary text-bg-primary">3</div>
+        <div class="offset-3 col-3 bg-secondary text-bg-primary">3</div>
+    </div>
+    <div class="row">
+        <div class="offset-4 col-4 bg-secondary text-bg-primary">4</div>
+    </div>
+    <!--Ambos eram col-6, mas bateu md (midia query p 700 e alguma coisa px, eles viram col-12)
+        Ou seja, enquanto for maior q md (768px) eles serão col-6-->
+    <div class="row">
+        <div class="col-md-6 col-12" style="background-color: blue;">Coluna 1</div>
+        <div class="col-md-6 col-12" style="background-color: red;">Coluna 2</div>
+    </div>
+
+    <!--Exercicio-->
+    <div class="row">
+        <div class="col-4" style="border: solid 3px white; background-color: black;">4</div>
+        <div class="col-4" style="border: solid 3px white; background-color: black;">4</div>
+        <div class="col-4" style="border: solid 3px white; background-color: black;">4</div>
+
+        <div class="col-4" style="border: solid 3px white; background-color: black;"></div>
+
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12" style="border: solid 3px white; background-color: black;"><br> 12</div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="border: solid 3px white; background-color: black;">6</div>
+                <div class="col-6" style="border: solid 3px white; background-color: black;">6</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
