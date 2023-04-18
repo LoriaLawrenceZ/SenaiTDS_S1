@@ -4,65 +4,123 @@ import java.util.Scanner;
 
 public class Exercicios {
     Scanner in = new Scanner(System.in, "latin1");
-    
-    public void cincoInteiros(){
+
+    public void cincoInteiros() {
         int[] valores = new int[5];
 
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[0] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[1] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[2] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[3] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[4] = in.nextInt();
+        for (int i = 0; i < valores.length; i++) {
+            System.out.println("Insira um valor. [Número Inteiro]");
+            valores[i] = in.nextInt();
+        }
 
-        System.out.println("Listando os números pela ordem que foram informados\n"+ valores[0] +"; "+ valores[1] +"; "+ valores[2] +"; "+ valores[3] +"; "+ valores[4]);
+        System.out.println("Listando os números pela ordem que foram informados");
+
+        for (int i = 0; i < valores.length; i++) {
+            System.out.print(valores[i] + "; ");
+        }
     }
 
-    public void dezInverso(){
+    public void dezInverso() {
         double[] valores = new double[10];
 
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[9] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[8] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[7] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[6] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[5] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[4] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[3] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[2] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[1] = in.nextInt();
-        System.out.println("Insira um valor. [Número Inteiro]");
-        valores[0] = in.nextInt();
+        for (int i = 0; i < valores.length; i++) {
+            System.out.println("Insira um valor. [Número Inteiro]");
+            valores[i] = in.nextInt();
+        }
 
-        System.out.println("Listando os números pela ordem inversa ao que foram informados\n"+ valores[0] +"; "+ valores[1] +"; "+ valores[2] +"; "+ valores[3] +"; "+ valores[4] +"; "+ valores[5] +"; "+ valores[6] +"; "+ valores[7] +"; "+ valores[8] +"; "+ valores[9]);
+        System.out.println("Listando os números pela ordem inversa ao que foram informados:");
+
+        for (int i = valores.length; i > -1; i--) {
+            System.out.print(valores[i] + "; ");
+        }
+
     }
 
-    public void media(){
+    public void media() {
         double notas[] = new double[4];
-        
-        System.out.println("Insira a primeira nota\n[0 - 10]");
-        notas[0] = in.nextDouble();
-        System.out.println("Insira a primeira nota\n[0 - 10]");
-        notas[1] = in.nextDouble();
-        System.out.println("Insira a primeira nota\n[0 - 10]");
-        notas[2] = in.nextDouble();
-        System.out.println("Insira a primeira nota\n[0 - 10]");
-        notas[3] = in.nextDouble();
-        
+
+        for (int i = 0; i < notas.length; i++) {
+            System.out.println("Insira a " + i + "° nota\n[0 - 10]");
+            notas[i] = in.nextDouble();
+        }
+
         double media = (notas[0] + notas[1] + notas[2] + notas[3]) / 4;
 
-        System.out.println("Notas do aluno:\n"+ notas[0] +"\n"+ notas[1] +"\n"+ notas[2] +"\n"+ notas[3] +"\nMédia do Aluno: "+ media);
+        System.out.println("Notas do aluno:\n" + notas[0] + "\n" + notas[1] + "\n" + notas[2] + "\n" + notas[3]
+                + "\nMédia do Aluno: " + media);
+    }
+
+    public void consoante() {
+        int j = 0, quant = 0;
+        char consoante[] = new char[10];
+        String palavra;
+
+        System.out.println("Insira uma palavra de no máximo 10 letras");
+        palavra = in.next();
+
+        for (int i = 0; i < palavra.length(); i++) {
+            if (palavra.charAt(i) != 'a' && palavra.charAt(i) != 'e' && palavra.charAt(i) != 'i' && palavra.charAt(i) != 'o' && palavra.charAt(i) != 'u') {
+                consoante[j] = palavra.charAt(i);
+                j++;
+            }
+        }
+
+        j = 0;
+        while (j < consoante.length) {
+            if (consoante[j] != 0) {
+                quant++;
+            }
+            j++;
+        }
+
+        System.out.println("Foram inseridas " + quant + " consoantes.\nForam utilizadas:");
+
+        j = 0;
+        while (consoante[j] != 0) {
+            System.out.print(consoante[j] + "; ");
+            j++;
+        }
+    }
+
+    public void imPar(){
+        int ii = 0, ip = 0, num[] = new int[20], impar[] = new int[20], par[] = new int[20];
+
+        System.out.println("Insira valores.\n[20 valores]");
+        for (int i = 0; i < num.length; i++) {
+            num[i] = in.nextInt();
+        }
+
+        for (int i = 0; i < num.length; i++) {
+            int decidir;
+            decidir = num[i]%2;
+            if (decidir == 0) {
+                par[ip] = num[i];
+                ip++;
+            } else {
+                impar[ii] = num[i];
+                ii++;
+            }
+        }
+
+        System.out.println("Resultados:");
+        
+        System.out.println("Números:");
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] +"; ");
+        }
+
+        System.out.println("\nPares: ");
+        ip = 0;
+        while (par[ip] != 0) {
+            System.out.print(par[ip] +"; ");
+            ip++;
+        }
+
+        System.out.println("\nÍmpares: ");
+        ii = 0;
+        while (impar[ii] != 0) {
+            System.out.print(impar[ii] +"; ");
+            ii++;
+        }
     }
 }

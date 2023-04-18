@@ -13,7 +13,7 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[S] - SAIR\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[4] - Exercício 4\n[5] - Exercício 5\n[S] - SAIR\n[Apenas Números]");
     
             escolha = in.next();
     
@@ -28,6 +28,14 @@ public class App {
                 
                 case "3":
                     obj.media();
+                    break;
+
+                case "4":
+                    obj.consoante();
+                    break;
+
+                case "5":
+                    obj.imPar();
                     break;
 
                 case "S":
