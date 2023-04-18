@@ -123,4 +123,29 @@ public class Exercicios {
             ii++;
         }
     }
+
+    public void mediaAlunos(){
+        double notas, medias[] = new double[10];
+        int j, quant = 0;
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Aluno "+ (i+1) +":");
+            j = 0;
+            notas = 0;
+            while (j < 4) {
+                System.out.println("Insira a "+ (j+1) +" nota:");
+                notas += in.nextDouble();
+                j++;
+            }
+            medias[i] = notas/4;
+        }
+
+        for (int i = 0; i < medias.length; i++) {
+            if (medias[i] >= 7) {
+                quant++;
+            }
+        }
+
+        System.out.println("Quantidade de alunos acima da média: "+ quant);
+    }
 }
