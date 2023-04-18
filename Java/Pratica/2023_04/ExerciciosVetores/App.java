@@ -13,9 +13,10 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[4] - Exercício 4\n[5] - Exercício 5\n[6] - Exercício 6\n[S] - SAIR\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[4] - Exercício 4\n[5] - Exercício 5\n[6] - Exercício 6\n[7] - Exercício 7\n[8] - Exercício 8\n[9] - Exercício 9\n[S] - SAIR\n[Apenas Números]");
     
             escolha = in.next();
+            escolha = escolha.toLowerCase();
     
             switch (escolha) {
                 case "1":
@@ -42,7 +43,19 @@ public class App {
                     obj.mediaAlunos();
                     break;
 
-                case "S":
+                case "7":
+                    obj.operacoes();
+                    break;
+
+                case "8":
+                    obj.idadeAltura();
+                    break;
+
+                case "9":
+                    obj.somQua();
+                    break;
+
+                case "s":
                     System.out.println("----====Encerrando Programa====----");
                     escolha = "N";
                     break;

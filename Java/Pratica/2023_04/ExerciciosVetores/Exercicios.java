@@ -1,6 +1,7 @@
 package ExerciciosVetores;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Exercicios {
     Scanner in = new Scanner(System.in, "latin1");
@@ -147,5 +148,53 @@ public class Exercicios {
         }
 
         System.out.println("Quantidade de alunos acima da média: "+ quant);
+    }
+
+    public void operacoes(){
+        int num[] = new int[5], soma = 0, multiplicacao = 1;
+
+        System.out.println("Insira valores para o vetor.\n[Inteiros]");
+        for (int i = 0; i < num.length; i++) {
+            num[i] = in.nextInt();
+            soma += num[i];
+            multiplicacao *= num[i];
+        }
+
+        System.out.println("Números:");
+        for (int i = 0; i < num.length; i++) {
+            System.out.println(num[i]);
+        }
+        System.out.println("Soma dos números: "+ soma +"\nMultiplicação dos números: "+ multiplicacao);
+    }
+
+    public void idadeAltura(){
+        double idade[] = new double[5], altura[] = new double[5];
+
+        for (int i = 0; i < idade.length; i++) {
+            System.out.println("Pessoa "+ i +":");
+
+            System.out.println("Altura:");
+            altura[i] = in.nextDouble();
+
+            System.out.println("Idade:");
+            idade[i] = in.nextDouble();
+        }
+
+        System.out.println("Informações na ordem inversa de inserção:");
+        for (int i = altura.length; i > 0; i--) {
+            System.out.println("Pessoa "+ i +":\nAltura: "+ altura[i] +"\nIdade: "+ idade[i]);
+        }
+    }
+
+    public void somQua(){
+        int vetorA[] = new int[10], soma = 0;
+
+        System.out.println("Insira valores para o vetor.\n[Inteiros]");
+        for (int i = 0; i < vetorA.length; i++) {
+            vetorA[i] = in.nextInt();
+            soma += Math.pow(vetorA[i], 2);
+        }
+
+        System.out.println("A soma total dos quadrados dos elementos do vetor é: "+ soma);
     }
 }
