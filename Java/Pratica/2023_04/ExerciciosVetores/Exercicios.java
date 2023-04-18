@@ -84,7 +84,7 @@ public class Exercicios {
     }
 
     public void imPar(){
-        int ii = 0, ip = 0, num[] = new int[20], impar[] = new int[20], par[] = new int[20];
+        int ii = 0, ip = 0, num[] = new int[20], impar[], par[];
 
         System.out.println("Insira valores.\n[20 valores]");
         for (int i = 0; i < num.length; i++) {
@@ -92,9 +92,20 @@ public class Exercicios {
         }
 
         for (int i = 0; i < num.length; i++) {
-            int decidir;
-            decidir = num[i]%2;
-            if (decidir == 0) {
+            if (num[i]%2 == 0) {
+                ip++;
+            } else {
+                ii++;
+            }
+        }
+
+        impar = new int[ii];
+        par = new int[ip];
+        
+        ii = 0;
+        ip = 0;
+        for (int i = 0; i < num.length; i++) {
+            if (num[i]%2 == 0) {
                 par[ip] = num[i];
                 ip++;
             } else {
@@ -111,17 +122,13 @@ public class Exercicios {
         }
 
         System.out.println("\nPares: ");
-        ip = 0;
-        while (par[ip] != 0) {
-            System.out.print(par[ip] +"; ");
-            ip++;
+        for (int i = 0; i < par.length; i++) {
+            System.out.print(par[i] +"; ");
         }
 
         System.out.println("\nÍmpares: ");
-        ii = 0;
-        while (impar[ii] != 0) {
-            System.out.print(impar[ii] +"; ");
-            ii++;
+        for (int i = 0; i < impar.length; i++) {
+            System.out.print(impar[i] +"; ");
         }
     }
 
