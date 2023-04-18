@@ -1,0 +1,33 @@
+Dado:
+192.168.10.30/24
+
+Rede:
+	- Binario
+		11000000.10101000.00001010.00011110/24
+
+	- Máscara sub-rede
+		11111111.11111111.11111111.00000000/24
+		2^8 - 2 = Hosts
+		256 - 2 = 254
+		Podem ser adicionados 254 IP's válidos
+
+	- Representação da máscara
+		11111111.11111111.11111111.00000000
+		00000000 = 0
+		Máscara de sub-rede
+			255.255.255.0
+
+	- Broadcast
+		(Inverte)
+		máscara de subrede - 1
+		255 em binario
+		broadcast da rede é 255/24
+
+
+IP: 192.168.10.30/24
+Rede: 192.168.10.0/24
+Broadcast: 192.168.10.255/24
+Máscara: 255.255.255.0
+Primeiro IP: 192.168.10.1/24
+Último IP: 192.168.10.254/24
+N° de IPs: 254
