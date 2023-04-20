@@ -56,7 +56,7 @@ public class Exercicios {
 
         System.out.println("Insira seu Estado Civil:\n[S]olteiro(a)\n[C]asado\n[V]iúvo(a)\n[D]ivorciado");
         estCivil = sc.next();
-        while (!sexo.equalsIgnoreCase("S") && !sexo.equalsIgnoreCase("C") && !sexo.equalsIgnoreCase("v") && !sexo.equalsIgnoreCase("D")) {
+        while (!estCivil.equalsIgnoreCase("S") && !estCivil.equalsIgnoreCase("C") && !estCivil.equalsIgnoreCase("v") && !estCivil.equalsIgnoreCase("D")) {
             System.out.println("Insira uma das quatro opções.");
             estCivil = sc.next();
         }
