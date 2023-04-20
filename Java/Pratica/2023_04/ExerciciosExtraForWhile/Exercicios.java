@@ -92,21 +92,24 @@ public class Exercicios {
             paisB = sc.nextInt();
         }
 
-        System.out.println("Insira a taxa de crescimento do país A");
+        System.out.println("Insira a taxa de crescimento do país A. [0 - 100]");
         taxaAcresc = sc.nextInt();
         while (taxaAcresc <= 0) {
             System.out.println("Insira um valor válido.");
             taxaAcresc = sc.nextInt();
         }
 
-        System.out.println("Insira a taxa de crescimento do país B");
+        System.out.println("Insira a taxa de crescimento do país B. [0 - 100]");
         taxaBcresc = sc.nextInt();
         while (taxaBcresc <= 0) {
             System.out.println("Insira um valor válido.");
             taxaBcresc = sc.nextInt();
         }
 
-        if (paisA < paisB) {
+        taxaAcresc = 1 + (taxaAcresc / 100);
+        taxaBcresc = 1 + (taxaBcresc / 100);
+
+        if (paisA < paisB && taxaAcresc > taxaBcresc) {
             while (paisA < paisB) {
                 paisA *= taxaAcresc;
                 paisB *= taxaBcresc;
@@ -115,10 +118,13 @@ public class Exercicios {
             
             System.out.println("Serão necessários ao menos "+ anos +" anos para que a população do país A ultrapasse ou iguale a do país B");
         }
+        else if(paisA < paisB && taxaAcresc <= taxaBcresc){
+            System.out.println("O país A nunca ultrapassará ou se igualará à população do aís B");
+        }
         else if(paisA == paisB){
             System.out.println("Os países já tem populações igualadas");
         }
-        else {
+        else if(paisA > paisB && taxaAcresc < taxaBcresc){
             while (paisB < paisA) {
                 paisA *= taxaAcresc;
                 paisB *= taxaBcresc;
@@ -127,24 +133,184 @@ public class Exercicios {
             
             System.out.println("Serão necessários ao menos "+ anos +" anos para que a população do país B ultrapasse ou iguale a do país A");
         }
+        else{
+            System.out.println("O país A nunca ultrapassará ou se igualará à população do aís B");
+        }
 
     }
 
     public void numMaior(){
+        double nums[] = new double[8], maior = 0;
 
+        System.out.println("Insira 8 valores para popular o vetor:");
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextDouble();
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > maior) {
+                maior = nums[i];
+            }
+        }
+
+        System.out.println("O maior número é: "+ maior);
     }
 
-    public void divisivel(){}
+    public void divisivel(){
+        int num[], d, j, iV = 0;
+        for (int i = 1; i <= 1000; i++) {
+            d = 0;
+            j = 1;
+            while(d < 3 && j < i){
+                if(i % (i-j) == 0){
+                    d++;
+                }
+                
+                j++;
 
-    public void gerarNum(){}
+                if (d == 3) {
+                    iV++;
+                    d++;
+                }
+            }
+        }
 
-    public void tabuada(){}
+        num = new int[iV];
+        
+        iV = 0;
+        for (int i = 1; i <= 1000; i++) {
+            d = 0;
+            j = 1;
+            while(d < 3 && j < i){
+                if(i % (i-j) == 0){
+                    d++;
+                }
 
-    public void potencia(){}
+                j++;
 
-    public void fibonacci(){}
+                if (d == 3) {
+                    num[iV] = i;
+                    iV++;
+                    d++;
+                }
+            }
+        }
 
-    public void fatorial(){}
+        System.out.println("Os números que são divisíveis por 3 menores que são menores que mil(1000) são:");
+        for (int i = 0; i < num.length; i++) {
+            System.out.println(num[i]);
+        }
+    }
 
-    public void primo(){}
+    public void gerarNum(){
+        int num1, num2, meio, conteudo[], iC = 0;
+
+        System.out.println("Insira um número inteiro que represente o começo do intervalo numérico:");
+        num1 = sc.nextInt();
+
+        System.out.println("Insira um número inteiro que represente o final do intervalo numérico:");
+        num2 = sc.nextInt();
+
+        meio = num1 + 1;
+        
+        while (meio < num2) {
+            iC++;
+            meio++;
+        }
+
+        conteudo = new int[iC];
+        
+        iC = 0;
+        meio = num1 + 1;
+        while (meio < num2) {
+            conteudo[iC] = meio;
+            iC++;
+            meio++;
+        }
+
+        System.out.println("Os números presentes no intervalo númerico de "+ num1 +" e "+ num2 +" é:");
+        for (int i = 0; i < conteudo.length; i++) {
+            System.out.println(conteudo[i]);
+        }
+    }
+
+    public void tabuada(){
+        int num;
+
+        System.out.println("Insira o número que deseja ver a tabuada:");
+        num = sc.nextInt();
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(num +" X "+ (i + 1) +" = "+ (num * (i + 1)));
+        }
+    }
+
+    public void potencia(){
+        int num, potencia;
+
+        System.out.println("Informe um valor:");
+        num = sc.nextInt();
+
+        System.out.println("Informe uma potência:");
+        potencia = sc.nextInt();
+
+        System.out.print("O resultado de "+ num +" elevado à "+ potencia +" é igual a: ");
+
+        for (int i = 1; i < potencia; i++) {
+            num *= potencia;
+        }
+
+        System.out.println(num);
+    }
+
+    public void fibonacci(){
+        double fn = 1, fn_1 = 1, fn_2 = 0;
+        int termo;
+
+        System.out.println("Quantos termos da sequência de Fibonacci deseja ver?");
+        termo = sc.nextInt();
+
+        for (int i = 0; i < termo; i++) {
+            System.out.println(fn +"; ");
+            fn = fn_1 + fn_2;
+            fn_2 = fn_1;
+            fn_1 = fn;
+        }
+    }
+
+    public void fatorial(){
+        int num, repeticao;
+
+        System.out.println("Insira um valor para ser calculado seu fatorial.");
+        num = sc. nextInt();
+        repeticao = num;
+
+        System.out.print("O fatorial de "+ num +" é: ");
+
+        while (repeticao > 2) {
+            num *= (repeticao - 1);
+            repeticao--;
+        }
+
+        System.out.println(num);
+    }
+
+    public void primo(){
+        int num, d = 0;
+
+        System.out.println("Insira um valor para verificar se é primo ou não");
+        num = sc.nextInt();
+
+        for (int i = 0; i < num; i++) {
+            if(num % (num - i) == 0){
+                d++;
+            }
+        }
+        if(d > 2){
+            System.out.println("O número informado não é primo.");
+        }
+        else{
+            System.out.println("O número informado é primo.");
+        }
+    }
 }
