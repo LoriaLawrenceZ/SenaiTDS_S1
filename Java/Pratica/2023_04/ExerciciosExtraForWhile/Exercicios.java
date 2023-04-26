@@ -257,7 +257,7 @@ public class Exercicios {
         System.out.print("O resultado de "+ num +" elevado à "+ potencia +" é igual a: ");
 
         for (int i = 1; i < potencia; i++) {
-            num *= potencia;
+            num *= num;
         }
 
         System.out.println(num);
