@@ -13,7 +13,7 @@ public class App {
         do
         {
             System.out.println(
-                    "\n------------------------------------------------------------------------------------\nEscolha qual exemplo deseja ver:\n[1] - Exemplo 1\n[2] - Exemplo 2\n[3] - Exemplo 3\n[4] - Exemplo 4\n[S] - SAIR\n[Apenas Números]");
+                    "\n------------------------------------------------------------------------------------\nEscolha qual exemplo deseja ver:\n[1] - Exemplo 1\n[2] - Exemplo 2\n[3] - Exemplo 3\n[4] - Exemplo 4\n[A] - Desafio 1\n[B] - Desafio 2\n[S] - SAIR\n[Apenas Números]");
     
             escolha = sc.next().toLowerCase();
     
@@ -32,6 +32,14 @@ public class App {
 
                   case "4":
                         obj.Exemplo4();
+                        break;
+
+                  case "a":
+                        obj.Desafio1();
+                        break;
+
+                  case "b":
+                        obj.Desafio2();
                         break;
 
                   case "s":
