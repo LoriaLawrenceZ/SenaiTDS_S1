@@ -47,6 +47,7 @@ public class Exemplos {
       public void Exemplo3(){
             int matriz[][] = new int[10][10], soma = 0; //Matriz de 2 dimensões
 
+            //Dando valor
             for (int i = 0; i < matriz.length; i++) {
                   for (int j = 0; j < matriz[i].length; j++) {
                         matriz[i][j] = rd.nextInt(10);
@@ -64,7 +65,7 @@ public class Exemplos {
             }
 
             //Soma de todos os itens da linha
-            for (int i = 0; i < matriz[0].length; i++) {
+            for (int i = 0; i < matriz[3].length; i++) {
                   soma += matriz[3][i];
             }
 
@@ -74,6 +75,7 @@ public class Exemplos {
       public void Exemplo4(){
             int matriz[][] = new int[10][10], soma = 0; //Matriz de 2 dimensões
 
+            //Dando valor
             for (int i = 0; i < matriz.length; i++) {
                   for (int j = 0; j < matriz[i].length; j++) {
                         matriz[i][j] = rd.nextInt(10);
