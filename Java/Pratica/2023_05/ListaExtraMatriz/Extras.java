@@ -124,7 +124,8 @@ public class Extras {
       }
 
       public void Extra5(){
-            double matriz[][] = new double[5][4], matriculaMN = 0, localizadorL = 0, localizadorC = 0;
+            double matriz[][] = new double[5][4], matriculaMN = 0, mediaPonderada = 0;
+            int localizadorL = 0;
 
             //Dando valor
             for (int i = 0; i < matriz.length; i++) {
@@ -134,7 +135,7 @@ public class Extras {
                                     System.out.println("Insira o número de matrícula.\nApenas números");
                                     int number = sc.nextInt();
 
-                                    while((int)(number * 10.0) % 10 == 0 ){
+                                    while((int)(number * 10) % 10 != 0 ){
                                           System.out.println("Insira um valor válido\n[Número inteiro]");
                                           number = sc.nextInt();
                                     }
@@ -152,8 +153,7 @@ public class Extras {
                                     break;
 
                               case 3:
-                                    System.out.println("Insira a nota final.\nApenas números");
-                                    matriz[i][j] = matriz[i][j-2] + matriz[i][j-1];
+                                    matriz[i][j] = (matriz[i][j-2] + matriz[i][j-1]) / 2;
                                     break;
                         
                               default:
@@ -162,16 +162,21 @@ public class Extras {
                   }
             }
 
-            //Imprimindo Resultados
             //Matrícula do aluno com maior nota
             for (int i = 0; i < matriz.length; i++) {
-                  for (int j = 0; j < matriz[i].length; j++) {
-                        if(matriz[i][j] >= matriculaMN){
-                              localizadorL = i;
-                              localizadorC = j;
-                        }
+                  if(matriz[i][3] >= matriculaMN){
+                        localizadorL = i;
                   }
             }
+            //Imprimindo aluno com maior nota
+            System.out.println("Matrícula do aluno com maior nota final:\n"+ matriz[localizadorL][3]);
+
+            //Média Aritmética de todas as notas finais
+            for (int i = 0; i < matriz[i].length; i++) {
+                  mediaPonderada += matriz[i][3];
+            }
+            //Imprimindo Resultados
+            System.out.println("A média aritmética de todas as notas finais é:\n"+ (mediaPonderada / 5));
       }
 
       public void Extra6(){}
