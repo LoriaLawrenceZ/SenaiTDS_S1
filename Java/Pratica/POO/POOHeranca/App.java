@@ -1,4 +1,4 @@
-package POO.POOHeranca;
+package POOHeranca;
 
 public class App {
     

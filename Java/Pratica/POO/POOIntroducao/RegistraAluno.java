@@ -1,4 +1,4 @@
-package Java.Pratica.POO.POOIntroducao;
+package POOIntroducao;
 
 public class RegistraAluno {
     // Atributo da Classe //

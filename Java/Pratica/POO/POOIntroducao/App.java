@@ -1,4 +1,4 @@
-package Java.Pratica.POO.POOIntroducao;
+package POOIntroducao;
 
 public class App {
     public static void main(String[] args) {
