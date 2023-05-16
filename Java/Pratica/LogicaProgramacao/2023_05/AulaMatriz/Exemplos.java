@@ -101,7 +101,7 @@ public class Exemplos {
       }
 
       public void Desafio1(){
-            int matriz[][] = new int[5][5], soma = 0; //Matriz de 2 dimensões
+            int matriz[][] = new int[5][5]; //Matriz de 2 dimensões
 
             //Dando valor
             for (int i = 0; i < matriz.length; i++) {

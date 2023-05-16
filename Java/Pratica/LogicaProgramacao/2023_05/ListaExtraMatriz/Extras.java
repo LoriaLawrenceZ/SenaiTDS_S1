@@ -202,6 +202,26 @@ public class Extras {
             }
 
             //Imprimir tabulado
+            //A
+            System.out.println("A:");
+            for (int i = 0; i < A.length; i++) {
+                  System.out.print("|");
+                  for (int j = 0; j < A[i].length; j++) {
+                        System.out.print(" "+ A[i][j] +" ");
+                  }
+                  System.out.println("|");
+            }
+            //B
+            System.out.println("B:");
+            for (int i = 0; i < B.length; i++) {
+                  System.out.print("|");
+                  for (int j = 0; j < B[i].length; j++) {
+                        System.out.print(" "+ B[i][j] +" ");
+                  }
+                  System.out.println("|");
+            }
+            //C
+            System.out.println("C:");
             for (int i = 0; i < C.length; i++) {
                   System.out.print("|");
                   for (int j = 0; j < C[i].length; j++) {
