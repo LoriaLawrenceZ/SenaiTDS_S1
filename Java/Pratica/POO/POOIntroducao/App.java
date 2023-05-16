@@ -12,6 +12,9 @@ public class App {
         aluno1.setNotaMatematica(10);
         aluno1.setNotaPortugues(7);
         aluno1.setNotaCiencias(8.5);
+        System.out.println(aluno1.getNome());
+        System.out.println(aluno1.getEndereco());
+        System.out.println(aluno1.getIdade());
         System.out.println(aluno1.getMedia());
 
         aluno2.setNome("Fernando Rheder Nascimento");
@@ -20,6 +23,10 @@ public class App {
         aluno2.setNotaMatematica(9);
         aluno2.setNotaPortugues(8);
         aluno2.setNotaCiencias(10);
+
+        System.out.println(aluno2.getNome());
+        System.out.println(aluno2.getEndereco());
+        System.out.println(aluno2.getIdade());
         System.out.println(aluno1.getMedia());
     }
 }
