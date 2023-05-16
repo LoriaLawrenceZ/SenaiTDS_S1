@@ -195,7 +195,7 @@ public class Extras {
             //Calculando C
             for (int i = 0; i < C.length; i++) {
                   for (int j = 0; j < C[i].length; j++) {
-                        C[i][j] = A[]
+                        double soma = A[i][j] + B[j][i];
                   }
             }
       }
