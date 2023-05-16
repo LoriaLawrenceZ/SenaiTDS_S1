@@ -14,28 +14,28 @@ public class RegistraAluno {
     
     //--------=====Criação de Métodos SET=====--------//
     // Define ou altera o nome do estudante
-    public void setNome(String temp) {
-        nome = temp;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     // Define ou altera o endereço do estudante
-    public void setEndereco(String temp) {
-        endereco = temp;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
     // Define ou altera o endereço do estudante
-    public void setIdade(int temp) {
-        idade = temp;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
     // Define ou altera o endereço do estudante
-    public void setNotaMatematica(double temp) {
-        notaMatematica = temp;
+    public void setNotaMatematica(double notaMatematica) {
+        this.notaMatematica = notaMatematica;
     }
     // Define ou altera o endereço do estudante
-    public void setNotaPortugues(double temp) {
-        notaPortugues = temp;
+    public void setNotaPortugues(double notaPortugues) {
+        this.notaPortugues = notaPortugues;
     }
     // Define ou altera o endereço do estudante
-    public void setNotaCiencias(double temp) {
-        notaCiencias = temp;
+    public void setNotaCiencias(double notaCiencias) {
+        this.notaCiencias = notaCiencias;
     }
 
     //--------=====Criação de Métodos GET=====--------//

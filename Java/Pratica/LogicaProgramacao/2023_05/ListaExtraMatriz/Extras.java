@@ -195,8 +195,19 @@ public class Extras {
             //Calculando C
             for (int i = 0; i < C.length; i++) {
                   for (int j = 0; j < C[i].length; j++) {
-                        double soma = A[i][j]*B[j][i] +;
+                        for(int k = 0; k < A[i].length; k++){
+                              C[i][j] += A[i][k] * B[k][j];
+                        }
                   }
+            }
+
+            //Imprimir tabulado
+            for (int i = 0; i < C.length; i++) {
+                  System.out.print("|");
+                  for (int j = 0; j < C[i].length; j++) {
+                        System.out.print(" "+ C[i][j] +" ");
+                  }
+                  System.out.println("|");
             }
       }
 }
