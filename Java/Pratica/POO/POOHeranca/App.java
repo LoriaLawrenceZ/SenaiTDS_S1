@@ -1,4 +1,4 @@
-package Java.Pratica.POO.POOHeranca;
+package POO.POOHeranca;
 
 public class App {
     
