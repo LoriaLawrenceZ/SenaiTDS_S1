@@ -38,11 +38,7 @@ public class App {
                         obj.Extra5();
                         break;
 
-                  case "a":
-                        obj.Extra5();
-                        break;
-
-                  case "b":
+                  case "6":
                         obj.Extra6();
                         break;
 

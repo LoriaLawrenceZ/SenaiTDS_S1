@@ -179,5 +179,24 @@ public class Extras {
             System.out.println("A média aritmética de todas as notas finais é:\n"+ (mediaPonderada / 5));
       }
 
-      public void Extra6(){}
+      public void Extra6(){
+            double A[][] = new double[3][3];
+            double B[][] = new double[3][3];
+            double C[][] = new double[3][3];
+
+            //Dando valor;
+            for (int i = 0; i < A.length; i++) {
+                  for (int j = 0; j < A[i].length; j++) {
+                        A[i][j] = rd.nextInt(10);
+                        B[i][j] = rd.nextInt(10);
+                  }
+            }
+
+            //Calculando C
+            for (int i = 0; i < C.length; i++) {
+                  for (int j = 0; j < C[i].length; j++) {
+                        C[i][j] = A[]
+                  }
+            }
+      }
 }
