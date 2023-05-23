@@ -87,10 +87,9 @@ public class Exercicios {
     }
 
     public void Exercicio3() {
-        int vetor[], vTamanho, min = 100, max = 1000, contador = 0;
+        int vetor[], contador = 0;
         
-        vTamanho = rd.nextInt((max - min) + 1) + min;
-        vetor = new int[vTamanho];
+        vetor = new int[rd.nextInt(900) + 100];
 
         //Dando valor
         for (int i = 0; i < vetor.length; i++) {
