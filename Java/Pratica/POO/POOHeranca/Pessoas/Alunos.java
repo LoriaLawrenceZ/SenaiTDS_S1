@@ -6,8 +6,8 @@ public class Alunos extends Pessoas {
 
     private int nMatricula;
     private String curso;
-    private double media;
     private String turma;
+    private double media;
 
     //Métodos
     public int getnMatricula() {
@@ -23,13 +23,6 @@ public class Alunos extends Pessoas {
     public void setCurso(String curso) {
         this.curso = curso;
     }
-
-    public double getMedia() {
-        return media;
-    }
-    public void setMedia(double media) {
-        this.media = media;
-    }
     
     public String getTurma() {
         return turma;
@@ -37,4 +30,11 @@ public class Alunos extends Pessoas {
     public void setTurma(String turma) {
         this.turma = turma;
     }  
+
+    public double getMedia() {
+        return media;
+    }
+    public void setMedia(double media) {
+        this.media = media;
+    }
 }

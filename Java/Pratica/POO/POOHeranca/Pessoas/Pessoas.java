@@ -1,14 +1,15 @@
 package POOHeranca.Pessoas;
 
-public class Pessoas {
+//"abstract" proibe a criação de objetos desta classe
+public abstract class Pessoas {
     //---------===== Superclasse =====---------//
     //(Fornece herança para as outras classes)
     
     //Atributos Genéricos (comuns a todas as)
     String nome;
+    int idade;
     String  endereco;
     String cpf;
-    int idade;
 
     //Métodos
     public String getNome() {
@@ -16,6 +17,13 @@ public class Pessoas {
     }
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
     public String getEndereco() {
@@ -30,12 +38,5 @@ public class Pessoas {
     }
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-    
-    public int getIdade() {
-        return idade;
-    }
-    public void setIdade(int idade) {
-        this.idade = idade;
     }
 }
