@@ -53,7 +53,7 @@ public class Exercicio1{
         System.out.println("Nome: "+ nome +"\nAltura: "+ altura +"\nData Nascimento: "+ diaNascimento +"/"+ mesNascimento +"/"+ anoNascimento);
     }
     //Calcular a idade da pessoa
-    public void Idade() {
+    public void CalcularIdade() {
         Calendar c = Calendar.getInstance();
         Date d = c.getTime();
     }
