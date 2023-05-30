@@ -27,4 +27,10 @@ public class Funcionarios extends Pessoas{
     public void setPeriodo(String periodo) {
         this.periodo = periodo;
     }
+
+    @Override
+    public void setRg(String rg) {
+        // TODO Auto-generated method stub
+        this.rg =  "SP" + "numero";
+    }
 }

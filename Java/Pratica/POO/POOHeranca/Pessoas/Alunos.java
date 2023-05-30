@@ -37,4 +37,10 @@ public class Alunos extends Pessoas {
     public void setMedia(double media) {
         this.media = media;
     }
+    
+    @Override
+    public void setRg(String rg) {
+        // TODO Auto-generated method stub
+        this.rg =  "SP" + "numero";
+    }
 }
