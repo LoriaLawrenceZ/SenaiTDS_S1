@@ -29,8 +29,7 @@ public class Funcionarios extends Pessoas{
     }
 
     @Override
-    public void setRg(String rg) {
-        // TODO Auto-generated method stub
+    public void setRg(String rg) { 
         this.rg =  "SP" + "numero";
     }
 }

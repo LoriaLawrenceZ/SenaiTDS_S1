@@ -1,28 +1,50 @@
 package POOExercicio2;
 
 public class Agenda {
-    String nome;
-    String idade;
-    String altura;
-    
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
+    private Pessoa[] pessoas;
+    private int quantidadePessoas;
+
+    public Agenda() {
+        pessoas = new Pessoa[10];
+        quantidadePessoas = 0;
     }
 
-    public String getIdade() {
-        return idade;
-    }
-    public void setIdade(String idade) {
-        this.idade = idade;
+    public void armazenaPessoa(String nome, int idade, float altura) {
+        if (quantidadePessoas < 10) {
+            Pessoa pessoa = new Pessoa(nome, idade, altura);
+            pessoas[quantidadePessoas] = pessoa;
+            quantidadePessoas++;
+            System.out.println("Pessoa adicionada à agenda.");
+        } else {
+            System.out.println("A agenda está cheia. Não é possível adicionar mais pessoas.");
+        }
     }
 
-    public String getAltura() {
-        return altura;
+    public int buscaPessoa(String nome) {
+        for (int i = 0; i < quantidadePessoas; i++) {
+            if (pessoas[i].getNome().equals(nome)) {
+                return i;
+            }
+        }
+        return -1; // Retorna -1 caso a pessoa não seja encontrada na agenda
     }
-    public void setAltura(String altura) {
-        this.altura = altura;
+
+    public void imprimeAgenda() {
+        if (quantidadePessoas == 0) {
+            System.out.println("A agenda está vazia.");
+        } else {
+            System.out.println("Agenda:");
+            for (int i = 0; i < quantidadePessoas; i++) {
+                System.out.println("\n---------\nPosição " + (i+1) + ": " + pessoas[i].DadosPessoa());
+            }
+        }
+    }
+
+    public void imprimePessoa(int index) {
+        if (index >= 0 && index < quantidadePessoas) {
+            System.out.println("Pessoa na posição " + index + ": " + pessoas[index].toString());
+        } else {
+            System.out.println("Posição inválida.");
+        }
     }
 }

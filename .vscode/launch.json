@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "POOExercicio2.Main",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "CalculadoraDeDescontos.Main",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "CalculadoraVelocidadeScanner.Main",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "GastosDeViagem",
+            "request": "launch",
+            "mainClass": "GastosDeViagem.GastosDeViagem",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld.HelloWorld",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Operadores.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "POOExercicio1.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App(2)",
+            "request": "launch",
+            "mainClass": "POOExercicio2.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App(3)",
+            "request": "launch",
+            "mainClass": "POOHeranca.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App(4)",
+            "request": "launch",
+            "mainClass": "POOInterface.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "App(5)",
+            "request": "launch",
+            "mainClass": "POOIntroducao.App",
+            "projectName": "SenaiTDS_e582ffd"
+        },
+        {
+            "type": "java",
+            "name": "VelocidadeMedia",
+            "request": "launch",
+            "mainClass": "VelocidadeMedia.VelocidadeMedia",
+            "projectName": "SenaiTDS_e582ffd"
+        }
+    ]
+}

@@ -1,7 +1,5 @@
 package POOExercicio1;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Exercicio1{
@@ -53,8 +51,5 @@ public class Exercicio1{
         System.out.println("Nome: "+ nome +"\nAltura: "+ altura +"\nData Nascimento: "+ diaNascimento +"/"+ mesNascimento +"/"+ anoNascimento);
     }
     //Calcular a idade da pessoa
-    public void CalcularIdade() {
-        Calendar c = Calendar.getInstance();
-        Date d = c.getTime();
-    }
+    public void CalcularIdade() {}
 }
