@@ -9,6 +9,13 @@
             "name": "App",
             "request": "launch",
             "mainClass": "POOElevador.App",
+            "projectName": "SenaiTDS_19956be1"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "POOElevador.App",
             "projectName": "SenaiTDS_e582ffd"
         },
         {
