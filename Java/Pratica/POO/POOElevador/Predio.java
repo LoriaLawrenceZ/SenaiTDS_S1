@@ -18,20 +18,6 @@ public class Predio {
         this.andarAtual = andarAtual;
     }
 
-    public int getAndarTotal() {
-        return andarTotal;
-    }
-    public void setAndarTotal(int andarTotal) {
-        this.andarTotal = andarTotal;
-    }
-
-    public int getCapacidadeElevador() {
-        return capacidadeElevador;
-    }
-    public void setCapacidadeElevador(int capacidadeElevador) {
-        this.capacidadeElevador = capacidadeElevador;
-    }
-
     public int getPessoasPresentes() {
         return pessoasPresentes;
     }
