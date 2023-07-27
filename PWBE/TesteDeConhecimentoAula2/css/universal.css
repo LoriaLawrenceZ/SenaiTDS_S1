@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; list-style: none;}
+
+/*-----===HEADER===-----*/
+header,
+.logo,
+nav, .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    min-height: 5em;
+    height: 8vh;
+    background-color: red;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+}
+
+.logo{
+    height: 100%;
+    width: 30%;
+}
+.logo-img-container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo-img-container a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo-img{
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+    width: 50%;
+}
+.nav-content{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-content li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all .3s ease;
+}
+.nav-content li a:hover{
+    font-size: 20.5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+}
+
+/*-----===MAIN===-----*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+/*-----===FOOTER===-----*/
+footer{
+    min-height: 15em;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+}
+
+.footer-links{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.mapa, .produtos{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footer-redes{
+    width: 100%;
+    height: 20%;
+}
