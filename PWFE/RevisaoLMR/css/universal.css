@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
-*{margin: 0; padding: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+*{margin: 0; padding: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;}
 
 /*-----===HEADER===-----*/
-header{
-    height: 10vh;
+/*---=Using Display Flex=---*/
+header, .logo-container, .horizontal-nav, .vertical-nav, .vertical-nav ul, .vertical-nav ul li{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+header{
+    height: 10vh;
     justify-content: space-around;
     background-color: aliceblue;
 }
@@ -14,16 +19,10 @@ header{
 .logo-container{
     height: 100%;
     width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
 }
 .horizontal-nav{
     height: 100%;
     width: 60%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -34,13 +33,29 @@ header{
 }
 
 .vertical-nav{
-    display: none;
+    width: 100%;
+    height: 20vh;
     top: 10vh;
     position: absolute;
+    transform: translateY(-100%);
     transition: .3s all ease-in-out;
+    z-index: -1;
+    background-color: aliceblue;
+}
+.vertical-nav ul{
+    height: 100%;
+    width: 70%;
+    flex-direction: column;
+    align-items: start;
+}
+.vertical-nav ul li{
+    height: 20%;
+    align-items: center;
 }
 
+/*-----=== Media Query ===-----*/
 @media screen and (max-width: 1024px) {
+    /*-----===HEADER===-----*/
     .horizontal-nav{
         display: none;
     }
@@ -58,13 +73,9 @@ header{
 
     .ham-btn-container:hover{
         cursor:pointer;
-        background-color: aqua;
     }
-    .ham-btn-container:hover ~ .vertical-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: blue;
+    .ham-btn-container:hover ~ .vertical-nav, .vertical-nav:hover{
+        transform: translateY(0%);
         transition: .3s all ease-in-out;
     }
 }
