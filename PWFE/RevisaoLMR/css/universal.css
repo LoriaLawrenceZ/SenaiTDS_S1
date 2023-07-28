@@ -19,10 +19,13 @@ header{
 .logo-container{
     height: 100%;
     width: 40%;
+    z-index: 999;
+    background-color: aliceblue;
 }
 .horizontal-nav{
     height: 100%;
     width: 60%;
+    z-index: 999;
     justify-content: space-around;
 }
 
@@ -30,6 +33,8 @@ header{
     height: 100%;
     width: 25%;
     display: none;
+    z-index: 999;
+    background-color: aliceblue;
 }
 
 .vertical-nav{
@@ -39,7 +44,7 @@ header{
     position: absolute;
     transform: translateY(-100%);
     transition: .3s all ease-in-out;
-    z-index: -1;
+    z-index: 998;
     background-color: aliceblue;
 }
 .vertical-nav ul{
@@ -51,6 +56,40 @@ header{
 .vertical-nav ul li{
     height: 20%;
     align-items: center;
+}
+
+/*-----===FOOTER===-----*/
+footer,
+.footer-links,
+.mapa, .eventos, .seja-produtor, .cidades,
+.footer-redes ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    min-height: 25em;
+    height: 35vh;
+    background-color: aliceblue;
+}
+.footer-links{
+    height: 70%;
+    width: 95%;
+    justify-content: space-around;
+    border-top: solid 2px rgb(210, 210, 210);
+}
+
+.footer-redes{
+    height: 10%;
+    width: 95%;
+    border-top: solid 2px rgb(210, 210, 210);
+}
+.footer-redes ul{
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
 }
 
 /*-----=== Media Query ===-----*/
